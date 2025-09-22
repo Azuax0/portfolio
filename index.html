@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio IT - Mattéo Binet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0a2e56;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #f7931e;
+            padding: 20px;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 0px 0px 10px #000;
+        }
+
+        .header p {
+            font-size: 18px;
+            margin: 0;
+            color: #000000;
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0px 4px 15px rgba(255, 149, 42, 0.8);
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f7931e;
+        }
+
+        .logo {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo a img {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 149, 42, 0.8);
+        }
+
+        h1 {
+            color: #f7931e;
+            font-size: 52px;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 0 0 8px rgba(247, 147, 30, 0.2);
+        }
+
+        .content-section {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .content-section h2 {
+            color: #ffffff;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .content-section p {
+            color: #f0f0f0;
+            font-size: 18px;
+        }
+
+        .files-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        .file-box {
+            padding: 30px;
+            background-color: #1c2331;
+            border: 3px solid #f7931e;
+            border-radius: 15px;
+            color: #ffffff;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(255, 149, 42, 0.3);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .file-box:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0px 15px 35px rgba(255, 149, 42, 0.4);
+            background-color: rgba(255, 149, 42, 0.2);
+        }
+
+        .file-box h3 {
+            margin: 0;
+            margin-bottom: 15px;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+        }
+
+        .file-box p {
+            color: #ffffff;
+        }
+
+        .file-box a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: transparent;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #000000;
+            color: #f7931e;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Styles mobiles pour l'index */
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px 10px;
+                padding: 15px;
+                width: auto;
+            }
+
+            .files-section {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 15px;
+            }
+
+            .file-box {
+                padding: 15px;
+                margin: 0;
+                width: auto;
+            }
+
+            .file-box h3 {
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+
+            .file-box p {
+                font-size: 14px;
+            }
+
+            .file-box:hover {
+                transform: translateY(-5px);
+                scale: 1.02;
+            }
+
+            .content-section {
+                padding: 20px;
+                margin: 10px 0;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .content-section h2 {
+                font-size: 24px;
+            }
+
+            .content-section p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .file-box {
+                padding: 12px;
+            }
+
+            .file-box h3 {
+                font-size: 16px;
+            }
+
+            .file-box p {
+                font-size: 13px;
+            }
+        }
+
+        .header-banner {
+            background-color: #f7931e;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 15px rgba(247, 147, 30, 0.3);
+        }
+
+        .header-banner h2 {
+            color: #ffffff;
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 
+                0px 0px 10px rgba(0, 0, 0, 0.7),
+                0px 0px 20px rgba(255, 255, 255, 0.2);
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .header-banner p {
+            font-size: 18px;
+            margin: 0;
+            color: #000000;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-banner">
+        <h2>MATTÉO BINET</h2>
+        <p>BTS SIO Option SISR</p>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#" class="active">Accueil</a>
+            <a href="pages/cv.html">CV</a>
+            <a href="pages/bts_sio.html">BTS SIO</a>
+            <a href="pages/ppe.html">PPE et E5/E6</a>
+            <a href="pages/top_pro.html">Top Pro</a>
+            <a href="pages/veilles.html">Veilles</a>
+            <a href="pages/contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="logo">
+        <a href="https://protection-civile.org" target="_blank" rel="noopener noreferrer">
+            <img src="images/logo_protection_civile.png" alt="Logo Protection Civile" />
+        </a>
+    </div>
+
+    <div class="container">
+        <h1>Accueil</h1>
+        <div class="content-section">
+            <h2>Bienvenue !</h2>
+            <p>Je suis Mattéo Binet, technicien informatique et passionné par l'univers de la technologie et des systèmes d'information. Ce portfolio vous permettra de découvrir les différents projets et compétences que j'ai acquis au cours de ma formation en BTS SIO, option SISR.</p>
+        </div>
+        <div class="content-section">
+            <h2>Dossiers</h2>
+            <div class="files-section">
+                <div class="file-box">
+                    <h3>CV</h3>
+                    <p>Mon curriculum vitae détaillant mon parcours professionnel.</p>
+                    <a href="pages/cv.html"></a>
+                </div>
+                <div class="file-box">
+                    <h3>BTS SIO</h3>
+                    <p>Présentation complète du BTS SIO et de ses différentes options.</p>
+                    <a href="pages/bts_sio.html"></a>
+                </div>
+                <div class="file-box">
+                    <h3>PPE</h3>
+                    <p>Projets Personnalisés Encadrés réalisés durant ma formation.</p>
+                    <a href="pages/ppe.html"></a>
+                </div>
+                <div class="file-box">
+                    <h3>Top Pro</h3>
+                    <p>Mon implication dans les événements majeurs de la Protection Civile.</p>
+                    <a href="pages/top_pro.html"></a>
+                </div>
+                <div class="file-box">
+                    <h3>Veilles Technologiques</h3>
+                    <p>Mes recherches sur les dernières innovations technologiques.</p>
+                    <a href="pages/veilles.html"></a>
+                </div>
+                <div class="file-box">
+                    <h3>Contact</h3>
+                    <p>Contactez-moi pour toute opportunité ou question.</p>
+                    <a href="pages/contact.html"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Mattéo Binet - Portfolio
+    </footer>
+</body>
+</html>

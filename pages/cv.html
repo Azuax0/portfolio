@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CV - Matt&eacute;o Binet</title>
+	<link href="../shared_styles.css" rel="stylesheet" />
+	<link href="../mobile_styles.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+	<style type="text/css">.pdf-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid var(--primary-color);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .pdf-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                0 0 20px rgba(0, 149, 255, 0.2),
+                0 0 40px rgba(0, 234, 255, 0.1);
+        }
+
+        .pdf-viewer {
+            width: 100%;
+            height: 1200px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .description {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--primary-color);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .description:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                0 0 20px rgba(0, 149, 255, 0.2),
+                0 0 40px rgba(0, 234, 255, 0.1);
+        }
+
+        .description p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #f0f0f0;
+        }
+
+        .description::before,
+        .description::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .description::before {
+            background: linear-gradient(45deg, 
+                transparent 20%, 
+                rgba(0, 149, 255, 0.1) 40%,
+                rgba(0, 149, 255, 0.2) 60%,
+                transparent 80%);
+        }
+
+        .description::after {
+            background: linear-gradient(-45deg,
+                transparent 20%,
+                rgba(0, 234, 255, 0.1) 40%,
+                rgba(0, 234, 255, 0.2) 60%,
+                transparent 80%);
+        }
+
+        .description:hover::before,
+        .description:hover::after {
+            opacity: 1;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 12px 25px;
+            background: rgba(0, 149, 255, 0.2);
+            border: 1px solid rgba(0, 234, 255, 0.3);
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .download-btn:hover {
+            background: rgba(0, 149, 255, 0.3);
+            border-color: rgba(0, 234, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 234, 255, 0.2);
+        }
+	</style>
+</head>
+<body>
+<div class="header-banner">
+<h2>Matt&eacute;o Binet</h2>
+
+<p>BTS SIO Option SISR</p>
+</div>
+
+<nav class="navbar">
+<div class="nav-links"><a href="../index.html">Accueil</a> <a class="active" href="cv.html">CV</a> <a href="bts_sio.html">BTS SIO</a> <a href="ppe.html">PPE et E5/E6</a><a href="top_pro.html">Top Pro</a> <a href="veilles.html">Veilles</a> <a href="contact.html">Contact</a></div>
+</nav>
+
+<div class="container">
+<h1>Curriculum Vitae</h1>
+
+<div class="description">
+<p>D&eacute;couvrez mon parcours professionnel, mes comp&eacute;tences et mes exp&eacute;riences dans le domaine de l&#39;informatique et de la Protection Civile.</p>
+</div>
+
+<div class="pdf-container"><embed class="pdf-viewer" height="1200px" src="../documents/cv.pdf#view=FitH" type="application/pdf" width="100%"></embed></div>
+<a class="download-btn" download="" href="../documents/cv.pdf">T&eacute;l&eacute;charger le CV </a></div>
+
+<footer>&copy; 2025 Matt&eacute;o Binet - Portfolio</footer>
+<script src="../scripts/main.js"></script></body>
+</html>

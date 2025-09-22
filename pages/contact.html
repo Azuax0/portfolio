@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link href="../shared_styles.css" rel="stylesheet" />
+	<link href="../mobile_styles.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+	<style type="text/css">body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        .container {
+            flex: 1;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 20px;
+        }
+
+        .project-card {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--primary-color);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .project-card::before,
+        .project-card::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card::before {
+            background: linear-gradient(45deg, 
+                transparent 20%, 
+                rgba(0, 149, 255, 0.1) 40%,
+                rgba(0, 149, 255, 0.2) 60%,
+                transparent 80%);
+        }
+
+        .project-card::after {
+            background: linear-gradient(-45deg,
+                transparent 20%,
+                rgba(0, 234, 255, 0.1) 40%,
+                rgba(0, 234, 255, 0.2) 60%,
+                transparent 80%);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                0 0 20px rgba(0, 149, 255, 0.2),
+                0 0 40px rgba(0, 234, 255, 0.1);
+        }
+
+        .project-card:hover::before,
+        .project-card:hover::after {
+            opacity: 1;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            font-size: 1.1em;
+        }
+
+        .contact-method strong {
+            min-width: 120px;
+            color: var(--primary-color);
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .contact-method a {
+            color: #f0f0f0;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 149, 255, 0.2);
+            border: 1px solid rgba(0, 234, 255, 0.3);
+            border-radius: 8px;
+        }
+
+        .contact-method a:hover {
+            background: rgba(0, 149, 255, 0.3);
+            border-color: rgba(0, 234, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 234, 255, 0.2);
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 1rem;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            border-top: 2px solid var(--primary-color);
+        }
+	</style>
+</head>
+<body>
+<div class="header-banner">
+<h2>Matt&eacute;o Binet</h2>
+
+<p>BTS SIO Option SISR</p>
+</div>
+
+<nav class="navbar">
+<div class="nav-links"><a href="../index.html">Accueil</a> <a href="cv.html">CV</a> <a href="bts_sio.html">BTS SIO</a> <a href="ppe.html">PPE et E5/E6</a> <a href="top_pro.html">Top Pro</a> <a href="veilles.html">Veilles</a> <a class="active" href="contact.html">Contact</a></div>
+</nav>
+
+<div class="container">
+<h1>Contact</h1>
+
+<div class="project-card">
+<p>Vous pouvez me contacter pour toute question ou opportunit&eacute; de travail via les moyens suivants :</p>
+
+<div class="contact-method"><strong>Email :</strong> <a href="mailto:matteo.binet110605@gmail.com">matteo.binet110605@gmail.com</a></div>
+
+<div class="contact-method"><strong>T&eacute;l&eacute;phone :</strong> <a href="tel:0631576350">06 31 57 63 50</a></div>
+</div>
+</div>
+
+<footer>&copy; 2025 Matt&eacute;o Binet - Portfolio</footer>
+<script src="../scripts/main.js"></script></body>
+</html>

@@ -1,0 +1,10 @@
+
+# Redirect all error pages to the custom divine error page
+ErrorDocument 400 /Error_Divine_Page.html
+ErrorDocument 401 /Error_Divine_Page.html
+ErrorDocument 403 /Error_Divine_Page.html
+ErrorDocument 404 /Error_Divine_Page.html
+ErrorDocument 500 /Error_Divine_Page.html
+ErrorDocument 502 /Error_Divine_Page.html
+ErrorDocument 503 /Error_Divine_Page.html
+ErrorDocument 504 /Error_Divine_Page.html

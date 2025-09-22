@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pr&eacute;sentation du BTS SIO</title>
+	<link href="../shared_styles.css" rel="stylesheet" />
+	<link href="../mobile_styles.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+	<style type="text/css">.options-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .option-card {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid var(--primary-color);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .option-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                0 0 20px rgba(0, 149, 255, 0.2),
+                0 0 40px rgba(0, 234, 255, 0.1);
+        }
+
+        .option-card h2 {
+            color: var(--primary-color);
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--primary-color);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .description:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                0 0 20px rgba(0, 149, 255, 0.2),
+                0 0 40px rgba(0, 234, 255, 0.1);
+        }
+
+        .description p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #f0f0f0;
+        }
+
+        .choice-section {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--primary-color);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .choice-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                0 0 20px rgba(0, 149, 255, 0.2),
+                0 0 40px rgba(0, 234, 255, 0.1);
+        }
+
+        .competences-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .competences-list li {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #f0f0f0;
+        }
+
+        .competences-list li::before {
+            content: "→";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .description::before,
+        .description::after,
+        .choice-section::before,
+        .choice-section::after,
+        .option-card::before,
+        .option-card::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .description::before,
+        .choice-section::before,
+        .option-card::before {
+            background: linear-gradient(45deg, 
+                transparent 20%, 
+                rgba(0, 149, 255, 0.1) 40%,
+                rgba(0, 149, 255, 0.2) 60%,
+                transparent 80%);
+        }
+
+        .description::after,
+        .choice-section::after,
+        .option-card::after {
+            background: linear-gradient(-45deg,
+                transparent 20%,
+                rgba(0, 234, 255, 0.1) 40%,
+                rgba(0, 234, 255, 0.2) 60%,
+                transparent 80%);
+        }
+
+        .description:hover::before,
+        .description:hover::after,
+        .choice-section:hover::before,
+        .choice-section:hover::after,
+        .option-card:hover::before,
+        .option-card:hover::after {
+            opacity: 1;
+        }
+	</style>
+</head>
+<body>
+<div class="header-banner">
+<h2>Matt&eacute;o Binet</h2>
+
+<p>BTS SIO Option SISR</p>
+</div>
+
+<nav class="navbar">
+<div class="nav-links"><a href="../index.html">Accueil</a> <a href="cv.html">CV</a> <a class="active" href="bts_sio.html">BTS SIO</a> <a href="ppe.html">PPE et E5/E6</a> <a href="top_pro.html">Top Pro</a> <a href="veilles.html">Veilles</a> <a href="contact.html">Contact</a></div>
+</nav>
+
+<div class="container">
+<h1>Pr&eacute;sentation du BTS SIO</h1>
+
+<div class="description">
+<p>Le BTS SIO (Services Informatiques aux Organisations) forme des techniciens capables de g&eacute;rer les infrastructures r&eacute;seau, les syst&egrave;mes d&#39;information, et d&eacute;velopper des applications adapt&eacute;es aux entreprises.</p>
+</div>
+
+<div class="options-container">
+<div class="option-card">
+<h2>Option SISR</h2>
+
+<p><strong>Solutions d&#39;Infrastructures, Syst&egrave;mes et R&eacute;seaux</strong></p>
+
+<ul class="competences-list">
+	<li>Administration des syst&egrave;mes</li>
+	<li>Gestion des r&eacute;seaux</li>
+	<li>Cybers&eacute;curit&eacute;</li>
+	<li>Maintenance infrastructure</li>
+	<li>Virtualisation</li>
+</ul>
+</div>
+
+<div class="option-card">
+<h2>Option SLAM</h2>
+
+<p><strong>Solutions Logicielles et Applications M&eacute;tiers</strong></p>
+
+<ul class="competences-list">
+	<li>D&eacute;veloppement d&#39;applications</li>
+	<li>Programmation mobile</li>
+	<li>Bases de donn&eacute;es</li>
+	<li>Design d&#39;interfaces</li>
+	<li>M&eacute;thodes agiles</li>
+</ul>
+</div>
+</div>
+
+<div class="choice-section">
+<h2>Mon Choix : SISR</h2>
+
+<p>J&#39;ai choisi l&#39;option SISR pour d&eacute;velopper mes comp&eacute;tences en :</p>
+
+<ul class="competences-list">
+	<li>Administration r&eacute;seau avanc&eacute;e</li>
+	<li>Gestion de serveurs Windows et Linux</li>
+	<li>S&eacute;curit&eacute; des syst&egrave;mes d&#39;information</li>
+	<li>Infrastructure cloud</li>
+</ul>
+
+<p>Cette sp&eacute;cialisation me permet d&#39;appliquer ces comp&eacute;tences au sein de la Protection Civile, o&ugrave; je contribue &agrave; maintenir et am&eacute;liorer l&#39;infrastructure informatique.</p>
+</div>
+</div>
+
+<footer>&copy; 2025 Matt&eacute;o Binet - Portfolio</footer>
+<script src="../scripts/main.js"></script></body>
+</html>

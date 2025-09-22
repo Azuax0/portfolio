@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Top Pro</title>
+	<link href="../shared_styles.css" rel="stylesheet" />
+	<link href="../mobile_styles.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+	<style type="text/css">.pdf-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid var(--primary-color);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .pdf-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                0 0 20px rgba(0, 149, 255, 0.2),
+                0 0 40px rgba(0, 234, 255, 0.1);
+        }
+
+        .pdf-viewer {
+            width: 100%;
+            height: 800px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .description {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--primary-color);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .description:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                0 0 20px rgba(0, 149, 255, 0.2),
+                0 0 40px rgba(0, 234, 255, 0.1);
+        }
+
+        .description p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #f0f0f0;
+        }
+
+        .description::before,
+        .description::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .description::before {
+            background: linear-gradient(45deg, 
+                transparent 20%, 
+                rgba(0, 149, 255, 0.1) 40%,
+                rgba(0, 149, 255, 0.2) 60%,
+                transparent 80%);
+        }
+
+        .description::after {
+            background: linear-gradient(-45deg,
+                transparent 20%,
+                rgba(0, 234, 255, 0.1) 40%,
+                rgba(0, 234, 255, 0.2) 60%,
+                transparent 80%);
+        }
+
+        .description:hover::before,
+        .description:hover::after {
+            opacity: 1;
+        }
+
+        .project-section {
+            background: rgba(0, 0, 0, 0.5);
+            border-left: 3px solid var(--primary-color);
+            padding: 1rem 2rem;
+            margin: 1.5rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .description h2 {
+            color: var(--primary-color);
+            margin: 2rem 0 1rem 0;
+            font-size: 1.5em;
+        }
+
+        .description h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .description ul {
+            list-style-type: none;
+            padding-left: 1.5rem;
+        }
+
+        .description ul li {
+            position: relative;
+            margin: 0.5rem 0;
+        }
+
+        .description ul li:before {
+            content: "▹";
+            position: absolute;
+            left: -1.5rem;
+            color: var(--primary-color);
+        }
+
+        .description p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+	</style>
+</head>
+<body>
+<div class="header-banner">
+<h2>Matt&eacute;o Binet</h2>
+
+<p>BTS SIO Option SISR</p>
+</div>
+
+<nav class="navbar">
+<div class="nav-links"><a href="../index.html">Accueil</a> <a href="cv.html">CV</a> <a href="bts_sio.html">BTS SIO</a> <a href="ppe.html">PPE et E5/E6</a> <a class="active" href="top_pro.html">Top Pro</a> <a href="veilles.html">Veilles</a> <a href="contact.html">Contact</a></div>
+</nav>
+
+<div class="container">
+<h1>Top Pro</h1>
+
+<div class="description">
+<h2>Qu&#39;est-ce que le TOP PROS ?</h2>
+
+<p>Le TOP PROS est un concours national d&#39;&eacute;loquence inter-campus organis&eacute; chaque ann&eacute;e. Il permet aux &eacute;tudiants de BTS de pr&eacute;senter leur projet en entreprise, accompagn&eacute;s et guid&eacute;s par leurs formateurs. Les finalistes nationaux pr&eacute;sentent leurs projets devant un jury de professionnels, avec &agrave; la cl&eacute; un voyage &agrave; New York et une exp&eacute;rience professionnelle et humaine inoubliable.</p>
+
+<h2>Mon Projet TOP PRO 2024</h2>
+
+<p>Mon projet porte sur la &quot;Cybers&eacute;curit&eacute; et Secourisme aux Jeux Olympiques &amp; Paralympiques avec la Protection Civile&quot;. En tant qu&#39;alternant en BTS SIO option SISR &agrave; la Protection Civile des C&ocirc;tes d&#39;Armor, je pr&eacute;sente mon parcours unique qui combine deux domaines essentiels :</p>
+
+<div class="project-section">
+<h3>Volet Cybers&eacute;curit&eacute;</h3>
+
+<ul>
+	<li>Mise en place d&#39;infrastructures s&eacute;curis&eacute;es</li>
+	<li>Gestion des acc&egrave;s et des droits utilisateurs</li>
+	<li>Protection des donn&eacute;es sensibles</li>
+	<li>Surveillance et maintenance des syst&egrave;mes</li>
+</ul>
+</div>
+
+<div class="project-section">
+<h3>Volet Secourisme</h3>
+
+<ul>
+	<li>Formation aux premiers secours</li>
+	<li>Participation aux dispositifs de secours</li>
+	<li>Gestion des &eacute;quipes sur le terrain</li>
+	<li>Coordination avec les autres services de secours</li>
+</ul>
+</div>
+
+<h2>Les Jeux Olympiques &amp; Paralympiques 2024</h2>
+
+<p>Ma participation aux JO de Paris 2024 repr&eacute;sente un d&eacute;fi unique o&ugrave; mes comp&eacute;tences en informatique et en secourisme seront pleinement mobilis&eacute;es. Cette exp&eacute;rience me permettra de :</p>
+
+<ul>
+	<li>Contribuer &agrave; la s&eacute;curit&eacute; informatique d&#39;un &eacute;v&eacute;nement mondial</li>
+	<li>Participer aux dispositifs de secours pendant les &eacute;preuves</li>
+	<li>Collaborer avec des &eacute;quipes internationales</li>
+	<li>Mettre en pratique mes comp&eacute;tences dans un contexte exceptionnel</li>
+</ul>
+</div>
+
+<div class="pdf-container"><embed class="pdf-viewer" height="800px" src="../documents/Top_Pro.pdf" type="application/pdf" width="100%"></embed></div>
+</div>
+
+<footer>&copy; 2025 Matt&eacute;o Binet - Portfolio</footer>
+<script src="../scripts/main.js"></script></body>
+</html>

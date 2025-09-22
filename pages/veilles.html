@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Veilles Technologiques</title>
+	<link href="../shared_styles.css" rel="stylesheet" />
+	<link href="../mobile_styles.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+	<style type="text/css">.project-card {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--primary-color);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .project-card::before,
+        .project-card::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card::before {
+            background: linear-gradient(45deg, 
+                transparent 20%, 
+                rgba(0, 149, 255, 0.1) 40%,
+                rgba(0, 149, 255, 0.2) 60%,
+                transparent 80%);
+        }
+
+        .project-card::after {
+            background: linear-gradient(-45deg,
+                transparent 20%,
+                rgba(0, 234, 255, 0.1) 40%,
+                rgba(0, 234, 255, 0.2) 60%,
+                transparent 80%);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                0 0 20px rgba(0, 149, 255, 0.2),
+                0 0 40px rgba(0, 234, 255, 0.1);
+        }
+
+        .project-card:hover::before,
+        .project-card:hover::after {
+            opacity: 1;
+        }
+
+        .project-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .project-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                var(--primary-color),
+                #00eaff,
+                var(--primary-color));
+            transition: width 0.3s ease;
+        }
+
+        .project-card:hover .project-title::after {
+            width: 100%;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .tech-tag {
+            background: rgba(0, 149, 255, 0.2);
+            border: 1px solid rgba(0, 234, 255, 0.3);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .tech-tag:hover {
+            background: rgba(0, 149, 255, 0.3);
+            border-color: rgba(0, 234, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .timeline {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+            border-left: 2px solid var(--primary-color);
+        }
+
+        .timeline-item {
+            margin: 1.5rem 0;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.65rem;
+            top: 0.5rem;
+            width: 0.8rem;
+            height: 0.8rem;
+            background: var(--primary-color);
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 149, 255, 0.2);
+        }
+
+        .timeline-item h3 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-item p {
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .tech-tags {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .timeline {
+                padding-left: 1rem;
+            }
+        }
+	</style>
+</head>
+<body>
+<div class="header-banner">
+<h2>Matt&eacute;o Binet</h2>
+
+<p>BTS SIO Option SISR</p>
+</div>
+
+<nav class="navbar">
+<div class="nav-links"><a href="../index.html">Accueil</a> <a href="cv.html">CV</a> <a href="bts_sio.html">BTS SIO</a> <a href="ppe.html">PPE et E5/E6</a> <a href="top_pro.html">Top Pro</a> <a class="active" href="veilles.html">Veilles</a> <a href="contact.html">Contact</a></div>
+</nav>
+
+<div class="container">
+<h1>Veilles Technologiques</h1>
+
+<div class="project-card">
+<h2 class="project-title">Informatique Quantique</h2>
+
+<div class="tech-tags"><span class="tech-tag">Quantum Computing</span> <span class="tech-tag">Q#</span> <span class="tech-tag">IBM Quantum</span> <span class="tech-tag">Cryptographie</span> <span class="tech-tag">Qubits</span></div>
+
+<div class="timeline">
+<div class="timeline-item">
+<h3>Principes Fondamentaux</h3>
+
+<p>L&#39;informatique quantique repr&eacute;sente une r&eacute;volution dans le traitement des informations. Contrairement aux bits classiques (0 ou 1), les qubits peuvent exister simultan&eacute;ment dans plusieurs &eacute;tats gr&acirc;ce &agrave; la superposition quantique, offrant une puissance de calcul exponentiellement sup&eacute;rieure.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Technologies et Langages</h3>
+
+<p>Les qubits peuvent &ecirc;tre impl&eacute;ment&eacute;s via diff&eacute;rentes technologies : ions pi&eacute;g&eacute;s, circuits supraconducteurs, ou points quantiques. Le langage Q# (Quantum Sharp) de Microsoft est devenu un standard pour la programmation quantique, permettant la cr&eacute;ation et simulation d&#39;algorithmes quantiques en collaboration avec des langages classiques comme C#.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Applications et Implications</h3>
+
+<p>Les applications sont vastes : cryptographie, simulation mol&eacute;culaire, optimisation des probl&egrave;mes et intelligence artificielle. Les ordinateurs quantiques pourraient notamment compromettre les syst&egrave;mes de cryptage actuels, n&eacute;cessitant le d&eacute;veloppement d&#39;une cryptographie r&eacute;sistante aux ordinateurs quantiques.</p>
+</div>
+
+<div class="timeline-item">
+<h3>D&eacute;fis Actuels</h3>
+
+<p>Les principaux obstacles incluent la d&eacute;coh&eacute;rence quantique (perte d&#39;&eacute;tat des qubits), le contr&ocirc;le pr&eacute;cis des qubits et la correction d&#39;erreurs. Des entreprises comme IBM et Google r&eacute;alisent des progr&egrave;s significatifs mais la technologie reste en d&eacute;veloppement.</p>
+</div>
+</div>
+</div>
+
+<div class="project-card">
+<h2 class="project-title">Attaques DDoS et Protection (2023-2026+)</h2>
+
+<div class="tech-tags"><span class="tech-tag">Cybers&eacute;curit&eacute;</span> <span class="tech-tag">DDoS</span> <span class="tech-tag">Protection</span> <span class="tech-tag">IA</span> <span class="tech-tag">IoT</span></div>
+
+<div class="timeline">
+<div class="timeline-item">
+<h3>2023</h3>
+
+<p>Augmentation des attaques via botnets IoT et utilisation croissante de l&#39;IA pour contourner les d&eacute;fenses. Les attaques deviennent plus sophistiqu&eacute;es et complexes.</p>
+</div>
+
+<div class="timeline-item">
+<h3>2024</h3>
+
+<p>L&#39;IA dans les attaques devient plus sophistiqu&eacute;e, rendant les attaques plus adaptatives. Les PME sont particuli&egrave;rement cibl&eacute;es, n&eacute;cessitant des solutions de protection accessibles.</p>
+</div>
+
+<div class="timeline-item">
+<h3>2025-2026+</h3>
+
+<p>&Eacute;mergence des botnets quantiques et d&eacute;mocratisation des technologies de d&eacute;fense avanc&eacute;es. Le chiffrement quantique commence &agrave; &ecirc;tre utilis&eacute; dans les solutions de protection.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Techniques de Protection</h3>
+
+<ul>
+	<li>D&eacute;tection proactive utilisant l&#39;IA pour analyser les mod&egrave;les de trafic</li>
+	<li>Strat&eacute;gies de d&eacute;fense en couches (CDN, WAF, solutions cloud)</li>
+	<li>Chiffrement quantique et IA avanc&eacute;e (&agrave; partir de 2026)</li>
+	<li>Sensibilisation et formation des &eacute;quipes</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<footer>&copy; 2025 Matt&eacute;o Binet - Portfolio</footer>
+<script src="../scripts/main.js"></script></body>
+</html>

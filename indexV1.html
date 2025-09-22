@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio IT - Mattéo Binet</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: radial-gradient(circle at top, #f7931e, #0f3d70);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 80px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 15px rgba(255, 149, 42, 0.7);
+            animation: fadeInDown 1.5s ease-out;
+            position: relative;
+        }
+        .header h1 {
+            font-size: 64px;
+            margin: 0;
+            color: #00d1ff;
+            letter-spacing: 3px;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 149, 42, 0.7);
+            animation: neonGlow 1.5s ease-out infinite alternate;
+        }
+        .header p {
+            font-size: 24px;
+            margin: 10px 0 0;
+            color: #ffcc00;
+            font-style: italic;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 60px;
+            animation: fadeInUp 2s ease-out;
+        }
+        .box {
+            background: linear-gradient(145deg, #ff9c1b, #0f3d70);
+            border-radius: 25px;
+            padding: 50px;
+            width: 250px;
+            height: 200px;
+            margin: 30px;
+            text-align: center;
+            transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .box:hover {
+            transform: rotateY(15deg) rotateX(10deg);
+            box-shadow: 0px 15px 40px rgba(255, 165, 0, 0.6);
+            background-color: #0f3d70;
+        }
+        .box img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+        .box h2 {
+            font-size: 26px;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+        .box:hover h2 {
+            color: #ffcc00;
+        }
+        .box a {
+            display: block;
+            color: transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 16px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #ffcc00;
+            text-shadow: 0 0 15px rgba(255, 149, 42, 0.7);
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes neonGlow {
+            from {
+                text-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00;
+            }
+            to {
+                text-shadow: 0 0 15px #00d1ff, 0 0 35px #00d1ff;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Portfolio IT - Mattéo Binet</h1>
+        <p>Découvrez l'inattendu, l'extraordinaire, un visuel digne des dieux</p>
+    </div>
+
+    <div class="container">
+        <!-- Category 1: E4 with correct path to icons and pages -->
+        <div class="box">
+            <img src="icons/e4.png" alt="E4 Icon">
+            <h2>E4</h2>
+            <a href="pages/E4.html"></a>
+        </div>
+
+        <!-- Category 2: E5 with correct path to icons and pages -->
+        <div class="box">
+            <img src="icons/e5.png" alt="E5 Icon">
+            <h2>E5</h2>
+            <a href="pages/E5.html"></a>
+        </div>
+
+        <!-- Category 3: Top Pro with correct path to icons and pages -->
+        <div class="box">
+            <img src="icons/top_pro.png" alt="Top Pro Icon">
+            <h2>Top Pro</h2>
+            <a href="pages/Top_Pro.html"></a>
+        </div>
+
+        <!-- Category 4: CV with correct path to icons and pages -->
+        <div class="box">
+            <img src="icons/cv.png" alt="CV Icon">
+            <h2>CV</h2>
+            <a href="pages/CV.html"></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mattéo Binet - Création hors du commun</p>
+    </footer>
+
+</body>
+</html>
