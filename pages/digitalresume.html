@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mattéo Binet — Digital Resume</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="neon-bg">
+
+	<header class="navbar-fixed">
+		<nav class="nav-glass">
+			<div class="nav-wrapper container">
+				<a href="#hero" class="brand-logo">Digital resume</a>
+				<a href="#" data-target="mobile-nav" class="sidenav-trigger">
+					<i class="material-icons">menu</i>
+				</a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#certs">Certifications</a></li>
+					<li><a href="#interests">Interests</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<ul class="sidenav" id="mobile-nav">
+		<li><a href="#about">About</a></li>
+		<li><a href="#skills">Skills</a></li>
+		<li><a href="#experience">Experience</a></li>
+		<li><a href="#education">Education</a></li>
+		<li><a href="#certs">Certifications</a></li>
+		<li><a href="#interests">Interests</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+
+	<section id="hero" class="hero-section">
+		<div class="container hero-grid">
+			<div class="hero-left">
+				<h1 class="hero-title typewriter">Mattéo Binet</h1>
+				<p class="hero-subtitle">Systems & Networks (SISR). I build useful tools, keep systems healthy, and help people when it matters.</p>
+				<ul class="hero-contacts">
+					<li><i class="material-icons tiny">email</i> <a href="mailto:matteo.binet110605@gmail.com">matteo.binet110605@gmail.com</a></li>
+					<li><i class="material-icons tiny">phone</i> <a href="tel:+33631576350">+33 6 31 57 63 50</a></li>
+					<li><i class="material-icons tiny">code</i> <a href="https://github.com/Azuax0" target="_blank">github.com/Azuax0</a></li>
+					<li><i class="material-icons tiny">public</i> <a href="https://www.linkedin.com/in/matt%C3%A9o-binet-755273333/" target="_blank">LinkedIn</a></li>
+				</ul>
+				<div class="hero-actions">
+					<a href="#contact" class="btn-large neon-btn waves-effect waves-light"><i class="material-icons left">send</i>Contact</a>
+					<a href="#skills" class="btn-large ghost-btn waves-effect"><i class="material-icons left">bolt</i>Skills</a>
+				</div>
+			</div>
+			<div class="hero-right">
+				<img src="photo.jpg" alt="Mattéo Binet" class="circle responsive-img z-depth-3 hero-photo">
+				<div class="chip-group">
+					<div class="chip chip-glow">IoT</div>
+					<div class="chip chip-glow">Networks</div>
+                    <div class="chip chip-glow">Development</div>
+                    <div class="chip chip-glow">Virtualization</div>
+                    <div class="chip chip-glow">Support</div>
+					<div class="chip chip-glow">Rescue</div>
+				</div>
+			</div>
+		</div>
+		<div class="hero-wave"></div>
+	</section>
+
+	<section id="about" class="section reveal">
+		<div class="container">
+			<div class="section-title">
+				<h3>About</h3>
+				<p class="flow-text subtitle">Who I am and what I do.</p>
+			</div>
+
+			<div class="row">
+				<div class="col s12 m6 l4">
+					<div class="card glass hoverable">
+						<div class="card-content">
+							<span class="card-title"><i class="material-icons left">history</i>Story</span>
+							<p>
+								I discovered programming and system administration during my BTS SIO (SISR). Through internships and a work-study,
+								I built small tools that improved logistics, communication and IT support. I like pragmatic solutions that help teams.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4">
+					<div class="card glass-deep hoverable">
+						<div class="card-content white-text center-align">
+							<img src="photo_n2.jpg" alt="Profile" class="circle responsive-img profile-photo">
+							<p class="profile-text">
+								French IT student specialized in Systems & Networks (SISR). Comfortable with Linux/Windows servers, virtualization
+								and basic development to automate tasks.
+							</p>
+						</div>
+						<div class="card-action center-align">
+							<a href="https://github.com/Azuax0" target="_blank" class="neon-link">GitHub</a>
+							<a href="https://www.linkedin.com/in/matt%C3%A9o-binet-755273333/" target="_blank" class="neon-link">LinkedIn</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 l4">
+					<ul class="collection glass z-depth-1">
+						<li class="collection-item glass"><strong>Location:</strong> Côtes-d’Armor, France</li>
+						<li class="collection-item glass"><strong>Driving license:</strong> B (2023)</li>
+						<li class="collection-item glass"><strong>Values:</strong> attentive, curious, organized, dynamic</li>
+					</ul>
+				</div>
+			</div>
+
+			<ul class="collection glass z-depth-1">
+				<li class="collection-item avatar glass">
+					<i class="material-icons circle neon-amber">local_hospital</i>
+					<span class="title">First Aid (PSE1 & PSE2)</span>
+					<p>Active since 2023 — field support experience with Protection Civile, including Paris 2024 operations support.</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="skills" class="section reveal">
+		<div class="container">
+			<div class="section-title">
+				<h3>Skills</h3>
+			</div>
+
+			<div class="row">
+				<div class="col s12 m6">
+					<ul class="collection with-header glass z-depth-1">
+						<li class="collection-header"><h5>Development</h5></li>
+						<li class="collection-item glass skill-row"><span>Dart</span><div class="progress neon-bar"><div class="determinate" style="width:60%"></div></div></li>
+						<li class="collection-item glass skill-row"><span>Python</span><div class="progress neon-bar"><div class="determinate" style="width:60%"></div></div></li>
+						<li class="collection-item glass skill-row"><span>HTML</span><div class="progress neon-bar"><div class="determinate" style="width:80%"></div></div></li>
+						<li class="collection-item glass skill-row"><span>CSS</span><div class="progress neon-bar"><div class="determinate" style="width:70%"></div></div></li>
+						<li class="collection-item glass skill-row"><span>PHP</span><div class="progress neon-bar"><div class="determinate" style="width:55%"></div></div></li>
+						<li class="collection-item glass skill-row"><span>JavaScript</span><div class="progress neon-bar"><div class="determinate" style="width:55%"></div></div></li>
+						<li class="collection-item glass skill-row"><span>SQL</span><div class="progress neon-bar"><div class="determinate" style="width:65%"></div></div></li>
+						<li class="collection-item glass skill-row"><span>Shell</span><div class="progress neon-bar"><div class="determinate" style="width:65%"></div></div></li>
+						<li class="collection-item glass skill-row"><span>Arduino / IoT</span><div class="progress neon-bar"><div class="determinate" style="width:55%"></div></div></li>
+					</ul>
+				</div>
+
+				<div class="col s12 m6">
+					<ul class="collection with-header glass z-depth-1">
+						<li class="collection-header"><h5>Systems & Networks</h5></li>
+						<li class="collection-item glass">Virtualization</li>
+						<li class="collection-item glass">Linux & Windows servers</li>
+						<li class="collection-item glass">Servers & services: DHCP, DNS, SMTP, IP</li>
+						<li class="collection-item glass">Switch/Router configuration (Cisco, HP)</li>
+						<li class="collection-item glass">Rack maintenance & cabling</li>
+					</ul>
+
+					<ul class="collection with-header glass z-depth-1">
+						<li class="collection-header"><h5>Advanced Networking</h5></li>
+						<li class="collection-item glass chip-wrap">
+							<span class="chip chip-glow">Spanning Tree</span>
+							<span class="chip chip-glow">HSRP</span>
+							<span class="chip chip-glow">Cybersecurity awareness</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="terminal glass z-depth-1">
+				<div class="terminal-bar">
+					<span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+					<span class="term-title">skills@matteo ~ %</span>
+				</div>
+				<pre><code>$ sudo skills --list
+- dev: HTML, CSS, JS, PHP, SQL, Python, Dart, Shell, Arduino/IoT
+- sys: Linux, Windows Server, Virtualization
+- net: DHCP, DNS, SMTP, IP, Cisco, HP, Spanning Tree, HSRP
+- ops: Rack maintenance, Cabling, Documentation</code></pre>
+			</div>
+		</div>
+	</section>
+
+	<section id="experience" class="section reveal">
+		<div class="container">
+			<div class="section-title">
+				<h3>Experience</h3>
+				<p class="flow-text subtitle">Work-study and internships</p>
+			</div>
+
+			<div class="timeline">
+				<div class="timeline-item">
+					<div class="timeline-dot neon-indigo"></div>
+					<div class="timeline-content card glass hoverable">
+						<h5>Work-study — Protection Civile des Côtes-d’Armor</h5>
+						<p class="muted">2023 — 2025 • Systems & Networks + Development</p>
+						<ul class="browser-default">
+							<li>Developed small internal tools to support operations.</li>
+							<li>System administration (rack, Debian & Windows servers).</li>
+							<li>Rack maintenance & structured cabling.</li>
+							<li>Technical support during Paris 2024 (Protection Civile command post).</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="timeline-item">
+					<div class="timeline-dot neon-amber"></div>
+					<div class="timeline-content card glass hoverable">
+						<h5>Intern — PC&CO (IT Technician)</h5>
+						<p class="muted">2020 — 2023 • 14 weeks</p>
+						<ul class="browser-default">
+							<li>Installed / tested / updated computers, servers, peripherals, and software.</li>
+							<li>Advised on purchases and installation; client relations.</li>
+							<li>Stock management, order preparation, trained junior interns.</li>
+							<li>Autonomous work when needed.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="timeline-item">
+					<div class="timeline-dot neon-grey"></div>
+					<div class="timeline-content card glass hoverable">
+						<h5>Intern — Méheust SAS (Robotics maintenance)</h5>
+						<p class="muted">2020 • 3 weeks</p>
+						<ul class="browser-default">
+							<li>Assisted diagnostics and repair of milking robots.</li>
+							<li>Followed inspection procedures and documentation updates.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="timeline-end"></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="education" class="section reveal">
+		<div class="container">
+			<div class="section-title">
+				<h3>Education</h3>
+			</div>
+
+			<div class="row">
+				<div class="col s12 m6">
+					<div class="card glass hoverable edu-card">
+						<div class="card-content">
+							<span class="card-title"><i class="material-icons left">school</i>BTS SIO — SISR</span>
+							<p class="muted">2023 — 2025 (expected) • ESUP Rennes</p>
+							<p>Infrastructure, systems & networks, security, scripting.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6">
+					<div class="card glass hoverable edu-card">
+						<div class="card-content">
+							<span class="card-title"><i class="material-icons left">school</i>Baccalauréat Systèmes Numériques</span>
+							<p class="muted">2023 • Option Networks • Saint-Brieuc</p>
+							<p>Foundations in networking, electronics, and IT systems.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12">
+					<ul class="collection glass z-depth-1">
+						<li class="collection-item glass"><i class="material-icons left">check_circle</i> Diplôme National du Brevet — 2020</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="certs" class="section reveal">
+		<div class="container">
+		 </div>
+		<div class="container">
+			<div class="section-title">
+				<h3>Certifications</h3>
+			</div>
+			<ul class="collection glass z-depth-1">
+				<li class="collection-item glass"><i class="material-icons left">verified</i>PSE1 & PSE2 — First Aid (2023)</li>
+				<li class="collection-item glass"><i class="material-icons left">directions_car</i>Driving license B (2023)</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="interests" class="section reveal">
+		<div class="container">
+			<div class="section-title">
+				<h3>Interests</h3>
+			</div>
+			<div class="chips-wrap">
+				<div class="chip chip-glow">Mechanical sports</div>
+				<div class="chip chip-glow">Development</div>
+				<div class="chip chip-glow">DIY & electronics</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="section reveal">
+		<div class="container">
+			<div class="section-title">
+				<h3>Contact</h3>
+				<p class="flow-text subtitle">Let’s build something useful.</p>
+			</div>
+
+			<div class="row">
+				<form class="col s12 m10 offset-m1 l8 offset-l2 card glass z-depth-1">
+					<div class="card-content">
+						<div class="row">
+							<div class="input-field col s12 m6">
+								<input id="lastname" type="text">
+								<label for="lastname">Last name</label>
+							</div>
+							<div class="input-field col s12 m6">
+								<input id="firstname" type="text">
+								<label for="firstname">First name</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="email" type="email">
+								<label for="email">Email</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<textarea id="message" class="materialize-textarea" placeholder="Your message"></textarea>
+								<label for="message">Message</label>
+							</div>
+						</div>
+					</div>
+					<div class="card-action center-align">
+						<button class="btn-large neon-btn waves-effect waves-light" type="submit">
+							<i class="material-icons left">send</i>Send
+						</button>
+					</div>
+				</form>
+			</div>
+
+			<ul class="collection glass z-depth-1 contact-list">
+				<li class="collection-item glass"><i class="material-icons left">email</i><a href="mailto:matteo.binet110605@gmail.com">matteo.binet110605@gmail.com</a></li>
+				<li class="collection-item glass"><i class="material-icons left">phone</i><a href="tel:+33631576350">+33 6 31 57 63 50</a></li>
+				<li class="collection-item glass"><i class="material-icons left">code</i><a href="https://github.com/Azuax0" target="_blank">github.com/Azuax0</a></li>
+				<li class="collection-item glass"><i class="material-icons left">public</i><a href="https://www.linkedin.com/in/matt%C3%A9o-binet-755273333/" target="_blank">LinkedIn</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<footer class="page-footer footer-glass">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 center">
+					<p>© <span id="year"></span> Mattéo Binet — Digital Résumé</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			M.Sidenav.init(document.querySelectorAll('.sidenav'));
+			document.getElementById('year').textContent = new Date().getFullYear();
+
+			const io = new IntersectionObserver((entries) => {
+				entries.forEach(e => {
+					if (e.isIntersecting) {
+						e.target.classList.add('reveal-in');
+						io.unobserve(e.target);
+					}
+				});
+			}, { threshold: 0.12 });
+
+			document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+		});
+	</script>
+</body>
+</html>
