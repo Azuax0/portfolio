@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mattéo Binet — Digital Resume</title>
+	<title>Mattéo Binet — Digital Résumé</title>
 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -15,7 +16,7 @@
 	<header class="navbar-fixed">
 		<nav class="nav-glass">
 			<div class="nav-wrapper container">
-				<a href="#hero" class="brand-logo">Digital resume</a>
+				<a href="#hero" class="brand-logo">Digital Resume</a>
 				<a href="#" data-target="mobile-nav" class="sidenav-trigger">
 					<i class="material-icons">menu</i>
 				</a>
@@ -61,11 +62,11 @@
 			<div class="hero-right">
 				<img src="photo.jpg" alt="Mattéo Binet" class="circle responsive-img z-depth-3 hero-photo">
 				<div class="chip-group">
-					<div class="chip chip-glow">IoT</div>
+					<div class="chip chip-glow">Sysadmin</div>
 					<div class="chip chip-glow">Networks</div>
-                    <div class="chip chip-glow">Development</div>
-                    <div class="chip chip-glow">Virtualization</div>
-                    <div class="chip chip-glow">Support</div>
+					<div class="chip chip-glow">Virtualization</div>
+					<div class="chip chip-glow">Arduino/IoT</div>
+					<div class="chip chip-glow">Support</div>
 					<div class="chip chip-glow">Rescue</div>
 				</div>
 			</div>
@@ -80,21 +81,28 @@
 				<p class="flow-text subtitle">Who I am and what I do.</p>
 			</div>
 
-			<div class="row">
+			<div class="row about-eq">
 				<div class="col s12 m6 l4">
-					<div class="card glass hoverable">
+					<div class="card glass hoverable about-fill">
 						<div class="card-content">
 							<span class="card-title"><i class="material-icons left">history</i>Story</span>
 							<p>
 								I discovered programming and system administration during my BTS SIO (SISR). Through internships and a work-study,
 								I built small tools that improved logistics, communication and IT support. I like pragmatic solutions that help teams.
 							</p>
+							<p>
+								Day to day, I’m comfortable mixing servers, networks and a bit of development to automate repetitive tasks and
+								keep services reliable for users in the field.
+							</p>
+							<p>
+								My next step is to push further on infrastructure, security basics and operational tooling while staying close to real needs.
+							</p>
 						</div>
 					</div>
 				</div>
 
 				<div class="col s12 m6 l4">
-					<div class="card glass-deep hoverable">
+					<div class="card glass-deep hoverable about-fill">
 						<div class="card-content white-text center-align">
 							<img src="photo_n2.jpg" alt="Profile" class="circle responsive-img profile-photo">
 							<p class="profile-text">
@@ -110,7 +118,7 @@
 				</div>
 
 				<div class="col s12 l4">
-					<ul class="collection glass z-depth-1">
+					<ul class="collection glass z-depth-1 about-fill">
 						<li class="collection-item glass"><strong>Location:</strong> Côtes-d’Armor, France</li>
 						<li class="collection-item glass"><strong>Driving license:</strong> B (2023)</li>
 						<li class="collection-item glass"><strong>Values:</strong> attentive, curious, organized, dynamic</li>
@@ -132,27 +140,28 @@
 		<div class="container">
 			<div class="section-title">
 				<h3>Skills</h3>
+				<p class="flow-text subtitle">From my CV, grouped clearly.</p>
 			</div>
 
 			<div class="row">
 				<div class="col s12 m6">
 					<ul class="collection with-header glass z-depth-1">
-						<li class="collection-header"><h5>Development</h5></li>
-						<li class="collection-item glass skill-row"><span>Dart</span><div class="progress neon-bar"><div class="determinate" style="width:60%"></div></div></li>
-						<li class="collection-item glass skill-row"><span>Python</span><div class="progress neon-bar"><div class="determinate" style="width:60%"></div></div></li>
-						<li class="collection-item glass skill-row"><span>HTML</span><div class="progress neon-bar"><div class="determinate" style="width:80%"></div></div></li>
-						<li class="collection-item glass skill-row"><span>CSS</span><div class="progress neon-bar"><div class="determinate" style="width:70%"></div></div></li>
-						<li class="collection-item glass skill-row"><span>PHP</span><div class="progress neon-bar"><div class="determinate" style="width:55%"></div></div></li>
-						<li class="collection-item glass skill-row"><span>JavaScript</span><div class="progress neon-bar"><div class="determinate" style="width:55%"></div></div></li>
-						<li class="collection-item glass skill-row"><span>SQL</span><div class="progress neon-bar"><div class="determinate" style="width:65%"></div></div></li>
-						<li class="collection-item glass skill-row"><span>Shell</span><div class="progress neon-bar"><div class="determinate" style="width:65%"></div></div></li>
-						<li class="collection-item glass skill-row"><span>Arduino / IoT</span><div class="progress neon-bar"><div class="determinate" style="width:55%"></div></div></li>
+						<li class="collection-header glass-head"><h5>Development</h5></li>
+						<li class="collection-item glass skill-row"><span class="skill-name">Dart</span><div class="progress neon-bar"><div class="determinate" style="width:60%"></div></div></li>
+						<li class="collection-item glass skill-row"><span class="skill-name">Python</span><div class="progress neon-bar"><div class="determinate" style="width:60%"></div></div></li>
+						<li class="collection-item glass skill-row"><span class="skill-name">HTML</span><div class="progress neon-bar"><div class="determinate" style="width:80%"></div></div></li>
+						<li class="collection-item glass skill-row"><span class="skill-name">CSS</span><div class="progress neon-bar"><div class="determinate" style="width:70%"></div></div></li>
+						<li class="collection-item glass skill-row"><span class="skill-name">PHP</span><div class="progress neon-bar"><div class="determinate" style="width:55%"></div></div></li>
+						<li class="collection-item glass skill-row"><span class="skill-name">JavaScript</span><div class="progress neon-bar"><div class="determinate" style="width:55%"></div></div></li>
+						<li class="collection-item glass skill-row"><span class="skill-name">SQL</span><div class="progress neon-bar"><div class="determinate" style="width:65%"></div></div></li>
+						<li class="collection-item glass skill-row"><span class="skill-name">Shell</span><div class="progress neon-bar"><div class="determinate" style="width:65%"></div></div></li>
+						<li class="collection-item glass skill-row"><span class="skill-name">Arduino / IoT</span><div class="progress neon-bar"><div class="determinate" style="width:55%"></div></div></li>
 					</ul>
 				</div>
 
 				<div class="col s12 m6">
 					<ul class="collection with-header glass z-depth-1">
-						<li class="collection-header"><h5>Systems & Networks</h5></li>
+						<li class="collection-header glass-head"><h5>Systems & Networks</h5></li>
 						<li class="collection-item glass">Virtualization</li>
 						<li class="collection-item glass">Linux & Windows servers</li>
 						<li class="collection-item glass">Servers & services: DHCP, DNS, SMTP, IP</li>
@@ -161,11 +170,15 @@
 					</ul>
 
 					<ul class="collection with-header glass z-depth-1">
-						<li class="collection-header"><h5>Advanced Networking</h5></li>
+						<li class="collection-header glass-head"><h5>Advanced Networking</h5></li>
 						<li class="collection-item glass chip-wrap">
 							<span class="chip chip-glow">Spanning Tree</span>
 							<span class="chip chip-glow">HSRP</span>
 							<span class="chip chip-glow">Cybersecurity awareness</span>
+							<span class="chip chip-glow">VLANs</span>
+							<span class="chip chip-glow">VPN</span>
+							<span class="chip chip-glow">Documentation</span>
+							<span class="chip chip-glow">Troubleshooting</span>
 						</li>
 					</ul>
 				</div>
@@ -176,11 +189,11 @@
 					<span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
 					<span class="term-title">skills@matteo ~ %</span>
 				</div>
-				<pre><code>$ sudo skills --list
+<pre><code>$ sudo skills --list
 - dev: HTML, CSS, JS, PHP, SQL, Python, Dart, Shell, Arduino/IoT
 - sys: Linux, Windows Server, Virtualization
-- net: DHCP, DNS, SMTP, IP, Cisco, HP, Spanning Tree, HSRP
-- ops: Rack maintenance, Cabling, Documentation</code></pre>
+- net: DHCP, DNS, SMTP, IP, Cisco, HP, Spanning Tree, HSRP, VLANs, VPN
+- ops: Rack maintenance, Cabling, Documentation, Troubleshooting</code></pre>
 			</div>
 		</div>
 	</section>
@@ -193,6 +206,19 @@
 			</div>
 
 			<div class="timeline">
+				<div class="timeline-item">
+					<div class="timeline-dot neon-cyan"></div>
+					<div class="timeline-content card glass hoverable">
+						<h5>Apprenticeship — Infotel Conseil</h5>
+						<p class="muted">2026 — 2028 • Apprenticeship (Systems & Networks / Automation)</p>
+						<ul class="browser-default">
+							<li>Contributing to infrastructure reliability and network operations.</li>
+							<li>Automation and tooling for day-to-day tasks.</li>
+							<li>Working in teams, writing clear documentation.</li>
+						</ul>
+					</div>
+				</div>
+
 				<div class="timeline-item">
 					<div class="timeline-dot neon-indigo"></div>
 					<div class="timeline-content card glass hoverable">
@@ -277,8 +303,6 @@
 
 	<section id="certs" class="section reveal">
 		<div class="container">
-		 </div>
-		<div class="container">
 			<div class="section-title">
 				<h3>Certifications</h3>
 			</div>
@@ -298,6 +322,9 @@
 				<div class="chip chip-glow">Mechanical sports</div>
 				<div class="chip chip-glow">Development</div>
 				<div class="chip chip-glow">DIY & electronics</div>
+				<div class="chip chip-glow">Robotics</div>
+				<div class="chip chip-glow">Volunteering (Rescue)</div>
+				<div class="chip chip-glow">Open-source learning</div>
 			</div>
 		</div>
 	</section>
@@ -356,7 +383,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col s12 center">
-					<p>© <span id="year"></span> Mattéo Binet — Digital Résumé</p>
+					<p>© <span id="year"></span> Mattéo Binet — Digital Resume</p>
 				</div>
 			</div>
 		</div>
