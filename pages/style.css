@@ -260,10 +260,10 @@ nav ul.right a {
   border-radius:50%;
   box-shadow: 0 0 10px rgba(0,225,255,.5);
 }
-.neon-cyan   { background: linear-gradient(135deg, #00f0ff, #6b9bff); }
-.neon-indigo { background: linear-gradient(135deg, #00e1ff, #a05cff); }
-.neon-amber  { background: linear-gradient(135deg, #ffcc00, #ff6a00); }
-.neon-grey   { background: linear-gradient(135deg, #8c9eff, #90a4ae); }
+.neon-cyan   { background: linear-gradient(135deg, #00f0ff, #022675); }
+.neon-indigo { background: linear-gradient(135deg, #00f0ff, #022675); }
+.neon-amber  { background: linear-gradient(135deg, #00f0ff, #022675); }
+.neon-grey   { background: linear-gradient(135deg, #00f0ff, #022675); }
 .timeline-content {
   padding: 14px;
   border-radius: 12px;
@@ -445,4 +445,59 @@ html, body { overflow-x: hidden !important; }
   .timeline-dot { position: static !important; margin: 0 auto 8px auto !important; display: block !important; }
   .timeline-content { text-align: center !important; }
   .page-footer, .footer-glass { text-align: center !important; }
+}
+@media (max-width: 640px) {
+  html, body {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  body {
+    transform: scale(1) !important;
+    transform-origin: center top !important;
+  }
+
+  nav .nav-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    align-items: center !important;
+  }
+  nav .brand-logo {
+    margin: 0 auto !important;
+    text-align: center !important;
+    max-width: 90vw !important;
+    font-size: clamp(15px, 5vw, 18px) !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root { --nav-h: 54px; }
+  nav .nav-wrapper {
+    grid-template-columns: auto 1fr !important;
+    align-items: center;
+    padding: 0 12px;
+    gap: 12px;
+  }
+  .sidenav-trigger { display: none !important; }
+  nav ul.right {
+    display: flex !important;
+    justify-self: end;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;          
+    max-width: 100%;
+  }
+  nav ul.right a {
+    padding: 0 10px;
+    height: 48px;
+    font-size: clamp(12px, 1.3vw, 14px);
+  }
+  .nav-wrapper .brand-logo {
+    max-width: 42vw;
+    font-size: clamp(18px, 2.1vw, 24px);
+  }
+  nav, nav .nav-wrapper { max-width: 100vw; }
 }
