@@ -1,0 +1,113 @@
+@media (min-width: 521px) and (max-width: 720px) {
+  nav .nav-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: clamp(6px, 1.8vw, 12px);
+    padding: 0 clamp(10px, 3vw, 16px);
+    grid-template-areas: "brand menu switch";
+  }
+  .nav-wrapper .brand-logo {
+    grid-area: brand;
+    margin: 0;
+    left: 0;
+    transform: none;
+  }
+  nav ul.right {
+    grid-area: menu;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: clamp(4px, 1.5vw, 10px);
+    flex-wrap: nowrap;
+    margin: 0;
+    min-width: 0;
+  }
+  nav ul.right a { padding: 0 clamp(4px, 1.2vw, 8px); font-size: clamp(10px, 1.8vw, 13px); }
+  .lang-toggle {
+    grid-area: switch;
+    justify-self: end;
+    margin: 0;
+    flex-shrink: 0;
+  }
+  .lang-btn { padding: 3px 7px; font-size: .7rem; }
+}
+
+@media (min-width: 721px) and (max-width: 991.98px) {
+  nav.nav-glass { min-height: 54px; }
+  nav .nav-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: clamp(6px, 1.8vw, 14px);
+    padding: 0 clamp(12px, 3vw, 20px);
+    grid-template-areas: "brand menu switch";
+  }
+  .nav-wrapper .brand-logo {
+    grid-area: brand;
+    max-width: 36vw;
+    font-size: clamp(18px, 2vw, 22px);
+    margin: 0;
+    left: 0;
+    transform: none;
+  }
+  nav ul.right {
+    grid-area: menu;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: clamp(6px, 1.8vw, 10px);
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  nav ul.right a { padding: 0 clamp(4px, 1.2vw, 7px); font-size: clamp(10px, 1.6vw, 13px); }
+  .lang-toggle {
+    grid-area: switch;
+    justify-self: end;
+    margin: 0;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio-card .card-content { min-height: auto; }
+  .modal.modal-glass .modal-content {
+    padding: 26px 20px 10px;
+  }
+  .detail-columns { gap: 18px; }
+}
+@media (min-width: 600px) {
+  .hero-grid { grid-template-columns: 1.4fr .9fr; grid-gap: 28px; }
+  .hero-photo { width: 200px; height: 200px; }
+  .hero-actions { grid-template-columns: auto auto; }
+  .timeline:before { left: 16px; }
+  .timeline-item { padding-left: 36px; }
+  .timeline-dot { left: 8px; top: 8px; width: 16px; height: 16px; }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root { --nav-h: 54px; }
+  nav .nav-wrapper {
+    grid-template-columns: auto 1fr !important;
+    align-items: center;
+    padding: 0 12px;
+    gap: 12px;
+  }
+  .sidenav-trigger { display: none !important; }
+  nav ul.right {
+    display: flex !important;
+    justify-self: end;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;          
+    max-width: 100%;
+  }
+  nav ul.right a {
+    padding: 0 10px;
+    height: 48px;
+    font-size: clamp(12px, 1.3vw, 14px);
+  }
+  .nav-wrapper .brand-logo {
+    max-width: 42vw;
+    font-size: clamp(18px, 2.1vw, 24px);
+  }
+  nav, nav .nav-wrapper { max-width: 100vw; }
+}

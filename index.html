@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mattéo Binet — Portfolio</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<link rel="stylesheet" href="desktop.css">
+	<link rel="stylesheet" href="tablet.css">
+	<link rel="stylesheet" href="mobile.css">
+</head>
+<body class="neon-bg">
+
+	<header class="navbar-fixed">
+		<nav class="nav-glass">
+			<div class="nav-wrapper container">
+				<a href="#home" class="brand-logo">Portfolio</a>
+				<a href="#" data-target="mobile-nav" class="sidenav-trigger">
+					<i class="material-icons">menu</i>
+				</a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#home" data-i18n="nav.home">Accueil</a></li>
+					<li><a href="#about" data-i18n="nav.about">À propos</a></li>
+					<li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+					<li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+				</ul>
+				<div class="lang-toggle">
+					<button type="button" class="lang-btn active" data-lang="fr" aria-pressed="true">🇫🇷 FR</button>
+					<button type="button" class="lang-btn" data-lang="en" aria-pressed="false">🇬🇧 EN</button>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<ul class="sidenav" id="mobile-nav">
+		<li><a href="#home" data-i18n="nav.home">Accueil</a></li>
+		<li><a href="#about" data-i18n="nav.about">À propos</a></li>
+		<li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+		<li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+		<li class="sidenav-lang">
+			<div class="lang-toggle">
+				<button type="button" class="lang-btn active" data-lang="fr" aria-pressed="true">🇫🇷 FR</button>
+				<button type="button" class="lang-btn" data-lang="en" aria-pressed="false">🇬🇧 EN</button>
+			</div>
+		</li>
+	</ul>
+
+	<section id="home" class="hero-section">
+		<div class="container hero-grid">
+			<div class="hero-left">
+				<h1 class="hero-title typewriter">Mattéo Binet</h1>
+				<p class="hero-subtitle" data-i18n="hero.subtitle">Pré-MSc Epitech. Je conçois des outils full-stack et j’opère les infrastructures : code, automatisation et services fiables sur le terrain.</p>
+				<ul class="hero-highlights">
+					<li><i class="material-icons tiny">school</i><span data-i18n="hero.highlight1">Pré-MSc Epitech après 2 ans d’alternance sysadmin/réseaux</span></li>
+					<li><i class="material-icons tiny">code</i><span data-i18n="hero.highlight2">Projets : Next.js + Express, scripts d’automatisation, observabilité</span></li>
+					<li><i class="material-icons tiny">security</i><span data-i18n="hero.highlight3">Incidents & automatisation pour la Protection Civile</span></li>
+				</ul>
+				<ul class="hero-contacts">
+					<li><i class="material-icons tiny">email</i> <a href="mailto:matteo.binet110605@gmail.com">matteo.binet110605@gmail.com</a></li>
+					<li><i class="material-icons tiny">phone</i> <a href="tel:+33631576350">+33 6 31 57 63 50</a></li>
+					<li><i class="material-icons tiny">code</i> <a href="https://github.com/Azuax0" target="_blank">github.com/Azuax0</a></li>
+					<li><i class="material-icons tiny">public</i> <a href="https://www.linkedin.com/in/matt%C3%A9o-binet-755273333/" target="_blank">LinkedIn</a></li>
+				</ul>
+				<div class="hero-actions">
+					<a href="#contact" class="btn-large neon-btn waves-effect waves-light"><i class="material-icons left">send</i><span data-i18n="hero.contactBtn">Contact</span></a>
+					<a href="#portfolio" class="btn-large ghost-btn waves-effect"><i class="material-icons left">bolt</i><span data-i18n="hero.portfolioBtn">Portfolio</span></a>
+				</div>
+			</div>
+			<div class="hero-right">
+				<img src="photo.jpg" alt="Mattéo Binet" class="circle responsive-img z-depth-3 hero-photo">
+				<div class="chip-group">
+					<div class="chip chip-glow">Full-stack</div>
+					<div class="chip chip-glow">Next.js</div>
+					<div class="chip chip-glow">Express</div>
+					<div class="chip chip-glow">MySQL</div>
+					<div class="chip chip-glow">Docker</div>
+					<div class="chip chip-glow">Ops</div>
+					<div class="chip chip-glow">Sysadmin</div>
+				</div>
+			</div>
+		</div>
+		<div class="hero-wave"></div>
+	</section>
+
+	<section id="about" class="section reveal">
+		<div class="container">
+			<div class="section-title">
+				<h3 data-i18n="sections.about.title">À propos</h3>
+				<p class="flow-text subtitle" data-i18n="sections.about.subtitle">Qui je suis et ce que j’apporte.</p>
+			</div>
+
+		<div class="row about-eq">
+		<div class="col s12 m6">
+			<div class="card glass hoverable about-fill">
+				<div class="card-content">
+					<span class="card-title" data-i18n="about.story.title">Parcours</span>
+					<p data-i18n="about.story.p1">
+							J’ai découvert l’administration systèmes et le développement pendant mon BTS SIO (SISR). Stages puis alternance m’ont permis de créer des outils qui améliorent la logistique, la communication et le support IT.
+						</p>
+						<p data-i18n="about.story.p2">
+							Au quotidien, je combine serveurs, réseaux et automatisation pour éviter les tâches répétitives et maintenir des services fiables pour les équipes terrain.
+						</p>
+						<p data-i18n="about.story.p3">
+							Je souhaite maintenant aller plus loin sur l’infrastructure, le socle sécurité et l’outillage opérationnel, toujours au plus près des besoins concrets.
+						</p>
+						
+					</div>
+					<div class="card-action about-cta">
+						<a href="digitalresume.html" class="btn-small neon-btn waves-effect waves-light" target="_blank" rel="noopener" data-i18n="about.story.cta">Voir le CV numérique</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col s12 m6">
+				<div class="card glass-deep hoverable about-fill profile-card">
+					<div class="card-content white-text center-align">
+						<img src="photo_n2.jpg" alt="Profile" class="circle responsive-img profile-photo">
+						<p class="profile-text">
+							<span data-i18n="about.profile.text">Étudiant IT français spécialisé en Systèmes & Réseaux (SISR). À l’aise avec les serveurs Linux/Windows, la virtualisation et le développement pour automatiser les tâches.</span>
+						</p>
+						<ul class="about-details">
+							<li><i class="material-icons tiny">place</i><span data-i18n="about.details.location">Côtes-d’Armor, France</span></li>
+							<li><i class="material-icons tiny">directions_car</i><span data-i18n="about.details.license">Permis B (2023)</span></li>
+							<li><i class="material-icons tiny">stars</i><span data-i18n="about.details.values">Attentif · Curieux · Organisé · Dynamique</span></li>
+						</ul>
+					</div>
+					<div class="card-action center-align profile-links">
+						<a href="https://github.com/Azuax0" target="_blank" class="neon-link">GitHub</a>
+						<a href="https://www.linkedin.com/in/matt%C3%A9o-binet-755273333/" target="_blank" class="neon-link">LinkedIn</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<ul class="collection glass z-depth-1">
+			<li class="collection-item avatar glass">
+				<i class="material-icons circle neon-amber">local_hospital</i>
+				<span class="title" data-i18n="about.firstaid.title">Secourisme (PSE1 & PSE2)</span>
+				<p data-i18n="about.firstaid.desc">Actif depuis 2023 — missions terrain avec la Protection Civile, dont l’appui aux opérations Paris 2024.</p>
+			</li>
+		</ul>
+	</div>
+
+	</section>
+
+	<section id="portfolio" class="section reveal">
+		<div class="container">
+			<div class="section-title">
+				<h3 data-i18n="sections.portfolio.title">Portfolio</h3>
+				<p class="flow-text subtitle" data-i18n="sections.portfolio.subtitle">Projets mêlant systèmes, réseaux et développement pragmatique.</p>
+			</div>
+
+			<div class="row portfolio-grid">
+				<div class="col s12 m6 l4">
+					<div class="card glass hoverable portfolio-card">
+						<div class="card-content">
+							<span class="card-title">APC22 Mobile Ops</span>
+							<p class="muted" data-i18n="portfolio.apc22.tagline">Application mobile · Flutter & Firebase</p>
+							<ul class="browser-default project-highlights">
+								<li data-i18n="portfolio.apc22.highlight1">Journal d’incidents hors-ligne utilisé lors de grands événements publics.</li>
+								<li data-i18n="portfolio.apc22.highlight2">Tableau de bord temps réel pour coordonner les équipes de secours.</li>
+							</ul>
+							<div class="chip-group chip-left">
+								<span class="chip chip-glow">Flutter</span>
+								<span class="chip chip-glow">Firebase</span>
+								<span class="chip chip-glow">UX research</span>
+							</div>
+						</div>
+						<div class="card-action">
+							<a href="#project-apc22" class="modal-trigger neon-link" data-i18n="portfolio.viewProject">Voir le projet</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4">
+					<div class="card glass hoverable portfolio-card">
+						<div class="card-content">
+							<span class="card-title">Odoo & GestSup Plug-ins</span>
+							<p class="muted" data-i18n="portfolio.plugins.tagline">Modules open-source · Python & PHP</p>
+							<ul class="browser-default project-highlights">
+								<li data-i18n="portfolio.plugins.highlight1">Tableaux de bord logistiques automatisés pour les entrepôts Odoo.</li>
+								<li data-i18n="portfolio.plugins.highlight2">Routage intelligent des tickets dans GestSup avec suivi des SLA.</li>
+							</ul>
+							<div class="chip-group chip-left">
+								<span class="chip chip-glow">Python</span>
+								<span class="chip chip-glow">PHP</span>
+								<span class="chip chip-glow">REST API</span>
+							</div>
+						</div>
+						<div class="card-action">
+							<a href="#project-plugins" class="modal-trigger neon-link" data-i18n="portfolio.viewProject">Voir le projet</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4">
+					<div class="card glass hoverable portfolio-card">
+						<div class="card-content">
+							<span class="card-title">Jobboard</span>
+							<p class="muted" data-i18n="portfolio.jobboard.tagline">Full-stack · Next.js & Express</p>
+							<ul class="browser-default project-highlights">
+								<li data-i18n="portfolio.jobboard.highlight1">Interface Next.js 14 + Tailwind/DaisyUI avec filtrage d’annonces.</li>
+								<li data-i18n="portfolio.jobboard.highlight2">API Express/MySQL avec rôles candidat, entreprise et admin.</li>
+							</ul>
+							<div class="chip-group chip-left">
+								<span class="chip chip-glow">Express</span>
+								<span class="chip chip-glow">MySQL</span>
+								<span class="chip chip-glow">Next.js</span>
+							</div>
+						</div>
+						<div class="card-action">
+							<a href="#project-jobboard" class="modal-trigger neon-link" data-i18n="portfolio.viewProject">Voir le projet</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4">
+					<div class="card glass hoverable portfolio-card">
+						<div class="card-content">
+							<span class="card-title">Python AI Experiments</span>
+							<p class="muted" data-i18n="portfolio.ai.tagline">Lab d’automatisation · Python & APIs ML</p>
+							<ul class="browser-default project-highlights">
+								<li data-i18n="portfolio.ai.highlight1">Assistants pour la documentation, le tri d’incidents et le reporting.</li>
+								<li data-i18n="portfolio.ai.highlight2">Garde-fous pour protéger les bases de connaissances internes.</li>
+							</ul>
+							<div class="chip-group chip-left">
+								<span class="chip chip-glow">FastAPI</span>
+								<span class="chip chip-glow">LangChain</span>
+								<span class="chip chip-glow">Docker</span>
+							</div>
+						</div>
+						<div class="card-action">
+							<a href="#project-ai" class="modal-trigger neon-link" data-i18n="portfolio.viewProject">Voir le projet</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4">
+					<div class="card glass hoverable portfolio-card">
+						<div class="card-content">
+							<span class="card-title">Urgent Care Print Dispatcher</span>
+							<p class="muted" data-i18n="portfolio.print.tagline">Automatisation desktop · Python & CUPS</p>
+							<ul class="browser-default project-highlights">
+								<li data-i18n="portfolio.print.highlight1">Files d’impression automatisées pour les maisons médicales de garde.</li>
+								<li data-i18n="portfolio.print.highlight2">Supervision et alerting pour les documents critiques.</li>
+							</ul>
+							<div class="chip-group chip-left">
+								<span class="chip chip-glow">Python</span>
+								<span class="chip chip-glow">systemd</span>
+								<span class="chip chip-glow">Monitoring</span>
+							</div>
+						</div>
+						<div class="card-action">
+							<a href="#project-print" class="modal-trigger neon-link" data-i18n="portfolio.viewProject">Voir le projet</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m6 l4">
+					<div class="card glass hoverable portfolio-card">
+						<div class="card-content">
+							<span class="card-title">Presence-Aware TV Signage</span>
+							<p class="muted" data-i18n="portfolio.signage.tagline">Intégration IoT · Raspberry Pi & capteurs</p>
+							<ul class="browser-default project-highlights">
+								<li data-i18n="portfolio.signage.highlight1">Affichage de tableaux de bord sobre en énergie grâce aux détecteurs de présence.</li>
+								<li data-i18n="portfolio.signage.highlight2">Rotation automatique des contenus et administration à distance.</li>
+							</ul>
+							<div class="chip-group chip-left">
+								<span class="chip chip-glow">Raspberry Pi</span>
+								<span class="chip chip-glow">Bash</span>
+								<span class="chip chip-glow">MQTT</span>
+							</div>
+						</div>
+						<div class="card-action">
+							<a href="#project-signage" class="modal-trigger neon-link" data-i18n="portfolio.viewProject">Voir le projet</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Portfolio project modals -->
+	<div id="project-apc22" class="modal modal-fixed-footer modal-glass">
+		<div class="modal-content">
+			<h4>APC22 Mobile Ops</h4>
+			<p class="detail-lead" data-i18n="portfolio.apc22.lead">Application compagnon pour la Protection Civile afin de saisir les interventions, partager les checklists et synchroniser avec le poste de commandement même en connectivité limitée.</p>
+			<div class="detail-meta">
+				<div data-i18n="portfolio.apc22.meta.years"><strong>Années :</strong> 2023 — 2024</div>
+				<div data-i18n="portfolio.apc22.meta.client"><strong>Client :</strong> Protection Civile Côtes-d’Armor</div>
+				<div data-i18n="portfolio.apc22.meta.role"><strong>Rôle :</strong> Développeur principal & co-designer</div>
+			</div>
+			<div class="detail-columns">
+				<div>
+					<h5 data-i18n="portfolio.common.objective">Objectif</h5>
+					<p data-i18n="portfolio.apc22.objective">Centraliser les fiches d’intervention et briefings terrain dans une application mobile utilisable hors ligne, avec synchronisation sécurisée dès le retour réseau.</p>
+					<h5 data-i18n="portfolio.common.challenges">Défis clés</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.apc22.challenges">
+						<li>Garantir la capture de données en mode avion et gérer les conflits lors des synchronisations.</li>
+						<li>Proposer une interface intuitive pour des secouristes centrés sur l’intervention.</li>
+						<li>Assurer la conformité RGPD et les contrôles d’accès pour les exports sensibles.</li>
+					</ul>
+				</div>
+				<div>
+					<h5 data-i18n="portfolio.common.contributions">Contributions</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.apc22.contributions">
+						<li>Ateliers avec les équipes APC22 pour prioriser les parcours terrain.</li>
+						<li>Développement Flutter (états, formulaires dynamiques, mode offline) avec règles Firebase Auth/Firestore.</li>
+						<li>CI/CD GitHub Actions et distribution sécurisée via Firebase App Distribution.</li>
+						<li>Exports PDF automatiques et passerelle FastAPI pour le reporting coordinateurs.</li>
+					</ul>
+					<h5 data-i18n="portfolio.common.stack">Stack & outils</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.apc22.stack">
+						<li>Flutter, Dart, Riverpod</li>
+						<li>Firebase Auth, Firestore, Cloud Functions</li>
+						<li>FastAPI, PostgreSQL pour les exports historiques</li>
+						<li>GitHub Actions, Firebase App Distribution</li>
+					</ul>
+				</div>
+			</div>
+			<div class="detail-outcome">
+				<h5 data-i18n="portfolio.common.impact">Impact</h5>
+				<p data-i18n="portfolio.apc22.impact">Pilotée sur des exercices départementaux : réduction du papier, préparation accélérée des bilans post-intervention et traçabilité renforcée pour l’encadrement.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close waves-effect waves-light btn-flat">Fermer</a>
+		</div>
+	</div>
+
+	<div id="project-plugins" class="modal modal-fixed-footer modal-glass">
+		<div class="modal-content">
+			<h4>Odoo & GestSup Plug-ins</h4>
+			<p class="detail-lead" data-i18n="portfolio.plugins.lead">Extensions open-source qui fluidifient la logistique et le support IT en adaptant les outils existants aux contraintes terrain.</p>
+			<div class="detail-meta">
+				<div data-i18n="portfolio.plugins.meta.years"><strong>Années :</strong> 2022 — 2024</div>
+				<div data-i18n="portfolio.plugins.meta.context"><strong>Contexte :</strong> Organisations associatives & PME</div>
+				<div data-i18n="portfolio.plugins.meta.role"><strong>Rôle :</strong> Développeur full-stack</div>
+			</div>
+			<div class="detail-columns">
+				<div>
+					<h5 data-i18n="portfolio.common.objective">Objectif</h5>
+					<p data-i18n="portfolio.plugins.objective">Automatiser le suivi matériel (Odoo) et la priorisation des tickets (GestSup) tout en restant compatibles avec les mises à jour officielles.</p>
+					<h5 data-i18n="portfolio.common.challenges">Défis clés</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.plugins.challenges">
+						<li>Étendre les modules en respectant les conventions Odoo/GestSup.</li>
+						<li>Sécuriser les échanges inter-systèmes (API, webhooks) et gérer les erreurs réseau.</li>
+						<li>Documenter pour des équipes mixtes techniques et métiers.</li>
+					</ul>
+				</div>
+				<div>
+					<h5 data-i18n="portfolio.common.contributions">Contributions</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.plugins.contributions">
+						<li>Modules Python Odoo pour tableaux logistiques, notifications et validations.</li>
+						<li>Plugins PHP GestSup pour le routage automatique et le calcul des SLA.</li>
+						<li>Tests automatisés (PyTest/PHPUnit) et pipelines Git pour les environnements de recette.</li>
+						<li>Guides utilisateurs et formations rapides pour l’adoption.</li>
+					</ul>
+					<h5 data-i18n="portfolio.common.stack">Stack & outils</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.plugins.stack">
+						<li>Odoo ORM, Python 3, vues XML</li>
+						<li>GestSup, PHP 8, MySQL</li>
+						<li>REST/JSON, webhooks, Postman</li>
+						<li>GitLab CI, Docker Compose pour la recette</li>
+					</ul>
+				</div>
+			</div>
+			<div class="detail-outcome">
+				<h5 data-i18n="portfolio.common.impact">Impact</h5>
+				<p data-i18n="portfolio.plugins.impact">Moins de ressaisies manuelles, visibilité temps réel des stocks critiques et tickets orientés vers les bons techniciens.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close waves-effect waves-light btn-flat">Fermer</a>
+		</div>
+	</div>
+
+	<div id="project-jobboard" class="modal modal-fixed-footer modal-glass">
+		<div class="modal-content">
+			<h4>Jobboard SISR</h4>
+			<p class="detail-lead" data-i18n="portfolio.jobboard.lead">Job board Next.js + Express réalisé durant le pré-MSc Epitech pour connecter étudiants et entreprises avec workflows complets.</p>
+			<div class="detail-meta">
+				<div data-i18n="portfolio.jobboard.meta.year"><strong>Année :</strong> 2024</div>
+				<div data-i18n="portfolio.jobboard.meta.project"><strong>Projet :</strong> Projet pré-MSc Epitech</div>
+				<div data-i18n="portfolio.jobboard.meta.role"><strong>Rôle :</strong> Développeur full-stack</div>
+			</div>
+			<div class="detail-columns">
+				<div>
+					<h5 data-i18n="portfolio.common.objective">Objectif</h5>
+					<p data-i18n="portfolio.jobboard.objective">Construire un job board complet (annonces, candidatures, messagerie) reproductible par les étudiants.</p>
+					<h5 data-i18n="portfolio.common.challenges">Défis clés</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.jobboard.challenges">
+						<li>Aligner Next.js (App Router) et Express via sessions cookies sécurisées.</li>
+						<li>Modéliser MySQL pour annonces, profils, candidatures et messages avec scripts d’init.</li>
+						<li>Documenter l’installation multi-OS et orchestrer front/back pour la promo.</li>
+					</ul>
+				</div>
+				<div>
+					<h5 data-i18n="portfolio.common.contributions">Contributions</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.jobboard.contributions">
+						<li>Conception de l’API Express (annonces, candidatures, messagerie) et middleware de rôles.</li>
+						<li>Implémentation du front Next.js 14 (App Router) : pages compte, admin, annonces, messages.</li>
+						<li>Auth par session cookie avec protections CSRF et garde côté front.</li>
+						<li>Rédaction du README, scripts npm et procédures SQL pour MySQL local.</li>
+					</ul>
+					<h5 data-i18n="portfolio.common.stack">Stack & outils</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.jobboard.stack">
+						<li>Next.js 14, React, TailwindCSS + DaisyUI</li>
+						<li>Express.js, Node.js</li>
+						<li>MySQL 8, scripts SQL</li>
+						<li>Sessions cookie, REST API</li>
+					</ul>
+				</div>
+			</div>
+			<div class="detail-outcome">
+				<h5 data-i18n="portfolio.common.impact">Impact</h5>
+				<p data-i18n="portfolio.jobboard.impact">Support de démonstration pour la promo : installation guidée, jeux de données et workflows complets.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close waves-effect waves-light btn-flat">Fermer</a>
+		</div>
+	</div>
+
+	<div id="project-ai" class="modal modal-fixed-footer modal-glass">
+		<div class="modal-content">
+			<h4>Python AI Experiments</h4>
+			<p class="detail-lead" data-i18n="portfolio.ai.lead">Laboratoire personnel pour accélérer les tâches opérationnelles répétitives avec des assistants IA, sans sacrifier la confidentialité.</p>
+			<div class="detail-meta">
+				<div data-i18n="portfolio.ai.meta.period"><strong>Période :</strong> 2023 — En cours</div>
+				<div data-i18n="portfolio.ai.meta.type"><strong>Type :</strong> R&D personnelle</div>
+				<div data-i18n="portfolio.ai.meta.role"><strong>Rôle :</strong> Conception & développement</div>
+			</div>
+			<div class="detail-columns">
+				<div>
+					<h5 data-i18n="portfolio.common.objective">Objectif</h5>
+					<p data-i18n="portfolio.ai.objective">Construire des assistants d’aide à la décision (tri d’incidents, rédaction, veille) réutilisables dans des environnements hybrides.</p>
+					<h5 data-i18n="portfolio.common.challenges">Défis clés</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.ai.challenges">
+						<li>Isoler les données sensibles tout en exploitant les modèles disponibles.</li>
+						<li>Garantir la traçabilité des réponses (sources citées, logs d’audit).</li>
+						<li>Limiter le coût d’inférence grâce au batching et au cache.</li>
+					</ul>
+				</div>
+				<div>
+					<h5 data-i18n="portfolio.common.contributions">Contributions</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.ai.contributions">
+						<li>Microservices FastAPI + LangChain pour l’orchestration de prompts et l’accès vectoriel.</li>
+						<li>Connecteurs vers des modèles open-source (OLLAMA, Hugging Face) et APIs externes.</li>
+						<li>Interface CLI et dashboard Streamlit pour tester/itérer sur les workflows.</li>
+						<li>Scripts d’évaluation (toxicity, hallucination) intégrés en CI.</li>
+					</ul>
+					<h5 data-i18n="portfolio.common.stack">Stack & outils</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.ai.stack">
+						<li>Python, FastAPI, LangChain</li>
+						<li>PostgreSQL + pgvector, Redis</li>
+						<li>Docker, Docker Compose, Make</li>
+						<li>OpenAI, Hugging Face, OLLAMA</li>
+					</ul>
+				</div>
+			</div>
+			<div class="detail-outcome">
+				<h5 data-i18n="portfolio.common.impact">Impact</h5>
+				<p data-i18n="portfolio.ai.impact">Réduction du temps de documentation et base solide pour proposer des assistants sécurisés aux équipes internes.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close waves-effect waves-light btn-flat">Fermer</a>
+		</div>
+	</div>
+
+	<div id="project-print" class="modal modal-fixed-footer modal-glass">
+		<div class="modal-content">
+			<h4>Urgent Care Print Dispatcher</h4>
+			<p class="detail-lead" data-i18n="portfolio.print.lead">Chaîne d’impression automatique inspirée du SAMU pour diffuser fiches patients et prescriptions aux maisons médicales de garde sans action manuelle.</p>
+			<div class="detail-meta">
+				<div data-i18n="portfolio.print.meta.year"><strong>Année :</strong> 2023</div>
+				<div data-i18n="portfolio.print.meta.context"><strong>Contexte :</strong> Maisons médicales de garde</div>
+				<div data-i18n="portfolio.print.meta.role"><strong>Rôle :</strong> Développeur & intégrateur systèmes</div>
+			</div>
+			<div class="detail-columns">
+				<div>
+					<h5 data-i18n="portfolio.common.objective">Objectif</h5>
+					<p data-i18n="portfolio.print.objective">Garantir la diffusion fiable de documents critiques (fiches patients, prescriptions) depuis e-mails et API vers plusieurs imprimantes.</p>
+					<h5 data-i18n="portfolio.common.challenges">Défis clés</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.print.challenges">
+						<li>Gérer les files d’attente et prioriser selon l’urgence.</li>
+						<li>Surveiller les périphériques et relancer automatiquement.</li>
+						<li>Sécuriser les documents (chiffrement, purge post-impression).</li>
+					</ul>
+				</div>
+				<div>
+					<h5 data-i18n="portfolio.common.contributions">Contributions</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.print.contributions">
+						<li>Service Python avec watchdog filesystem et API IMAP pour collecter les ordres.</li>
+						<li>Pipeline CUPS, règles d’impression et scripts Bash pour les scénarios de secours.</li>
+						<li>Dashboard Grafana + alertes Telegram pour surveiller les blocages.</li>
+						<li>Documentation d’exploitation et procédures de reprise.</li>
+					</ul>
+					<h5 data-i18n="portfolio.common.stack">Stack & outils</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.print.stack">
+						<li>Python, CUPS, systemd</li>
+						<li>Grafana, Prometheus, Alertmanager</li>
+						<li>IMAP, PDFtk, Bash</li>
+					</ul>
+				</div>
+			</div>
+			<div class="detail-outcome">
+				<h5 data-i18n="portfolio.common.impact">Impact</h5>
+				<p data-i18n="portfolio.print.impact">Impressions toujours dans les temps, même hors horaires de bureau, et alertes proactives limitant les interventions sur site.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close waves-effect waves-light btn-flat">Fermer</a>
+		</div>
+	</div>
+
+	<div id="project-signage" class="modal modal-fixed-footer modal-glass">
+		<div class="modal-content">
+			<h4>Presence-Aware TV Signage</h4>
+			<p class="detail-lead" data-i18n="portfolio.signage.lead">Réseau d’écrans pilotés par Raspberry Pi qui s’activent à l’arrivée du personnel et diffusent automatiquement les tableaux de bord opérationnels.</p>
+			<div class="detail-meta">
+				<div data-i18n="portfolio.signage.meta.year"><strong>Année :</strong> 2022</div>
+				<div data-i18n="portfolio.signage.meta.context"><strong>Contexte :</strong> Protection Civile & locaux associatifs</div>
+				<div data-i18n="portfolio.signage.meta.role"><strong>Rôle :</strong> Intégrateur IoT</div>
+			</div>
+			<div class="detail-columns">
+				<div>
+					<h5 data-i18n="portfolio.common.objective">Objectif</h5>
+					<p data-i18n="portfolio.signage.objective">Optimiser l’affichage des informations critiques (planning, météo, consignes) en réduisant la consommation électrique des écrans.</p>
+					<h5 data-i18n="portfolio.common.challenges">Défis clés</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.signage.challenges">
+						<li>Détecter la présence avec capteurs PIR calibrés par salle.</li>
+						<li>Synchroniser dashboards, flux vidéo et alertes sans intervention.</li>
+						<li>Durcir le réseau et sécuriser physiquement les boîtiers.</li>
+					</ul>
+				</div>
+				<div>
+					<h5 data-i18n="portfolio.common.contributions">Contributions</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.signage.contributions">
+						<li>Scripts Bash/Python pour HDMI-CEC, rotation des sources et redémarrages planifiés.</li>
+						<li>Serveur MQTT + Node-RED pour la gestion du parc et les alertes.</li>
+						<li>VLAN dédié, VPN WireGuard, durcissement (fail2ban, audits Lynis).</li>
+						<li>Documentation de déploiement pour installation par bénévoles.</li>
+					</ul>
+					<h5 data-i18n="portfolio.common.stack">Stack & outils</h5>
+					<ul class="browser-default detail-list" data-i18n="portfolio.signage.stack">
+						<li>Raspberry Pi OS, Python, Bash</li>
+						<li>MQTT, Node-RED, Grafana</li>
+						<li>VLAN, VPN WireGuard</li>
+						<li>HDMI-CEC, capteurs PIR</li>
+					</ul>
+				</div>
+			</div>
+			<div class="detail-outcome">
+				<h5 data-i18n="portfolio.common.impact">Impact</h5>
+				<p data-i18n="portfolio.signage.impact">Affichage activé uniquement lorsque nécessaire, réduction de la consommation et mise à jour centralisée des informations critiques.</p>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close waves-effect waves-light btn-flat">Fermer</a>
+		</div>
+	</div>
+
+	<section id="contact" class="section reveal">
+		<div class="container">
+			<div class="section-title">
+				<h3 data-i18n="sections.contact.title">Contact</h3>
+				<p class="flow-text subtitle" data-i18n="sections.contact.subtitle">Construisons quelque chose ensemble.</p>
+			</div>
+
+		<div class="row">
+			<div class="col s12">
+				<form class="card glass z-depth-1 contact-form">
+					<div class="card-content">
+						<div class="row">
+							<div class="input-field col s12 m6">
+								<input id="lastname" type="text" placeholder="Votre nom" data-i18n-placeholder="contact.form.lastname.placeholder">
+								<label for="lastname" data-i18n="contact.form.lastname.label">Nom</label>
+							</div>
+							<div class="input-field col s12 m6">
+								<input id="firstname" type="text" placeholder="Votre prénom" data-i18n-placeholder="contact.form.firstname.placeholder">
+								<label for="firstname" data-i18n="contact.form.firstname.label">Prénom</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="email" type="email" placeholder="votre@email.com" data-i18n-placeholder="contact.form.email.placeholder">
+								<label for="email" data-i18n="contact.form.email.label">Email</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<textarea id="message" class="materialize-textarea" placeholder="Votre message" data-i18n-placeholder="contact.form.message.placeholder"></textarea>
+								<label for="message" data-i18n="contact.form.message.label">Message</label>
+							</div>
+						</div>
+					</div>
+					<div class="card-action center-align">
+						<button class="btn-large neon-btn waves-effect waves-light" type="submit">
+							<i class="material-icons left">send</i><span data-i18n="contact.form.submit">Envoyer</span>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<ul class="collection glass z-depth-1 contact-list">
+			<li class="collection-item glass"><i class="material-icons left">email</i><a href="mailto:matteo.binet110605@gmail.com">matteo.binet110605@gmail.com</a></li>
+			<li class="collection-item glass"><i class="material-icons left">phone</i><a href="tel:+33631576350">+33 6 31 57 63 50</a></li>
+			<li class="collection-item glass"><i class="material-icons left">code</i><a href="https://github.com/Azuax0" target="_blank">github.com/Azuax0</a></li>
+			<li class="collection-item glass"><i class="material-icons left">public</i><a href="https://www.linkedin.com/in/matt%C3%A9o-binet-755273333/" target_blank">LinkedIn</a></li>
+		</ul>
+		</div>
+	</section>
+
+	<footer class="page-footer footer-glass">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 center">
+					<p>© <span id="year"></span> Mattéo Binet — Portfolio</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		const translations = {
+			fr: {
+				'page.title': 'Mattéo Binet — Portfolio',
+				'nav.home': 'Accueil',
+				'nav.about': 'À propos',
+				'nav.portfolio': 'Portfolio',
+				'nav.contact': 'Contact',
+				'hero.subtitle': 'Pré-MSc Epitech. Je conçois des outils full-stack et j’opère les infrastructures : code, automatisation et services fiables sur le terrain.',
+				'hero.highlight1': 'Pré-MSc Epitech après 2 ans d’alternance sysadmin/réseaux',
+				'hero.highlight2': 'Projets : Next.js + Express, scripts d’automatisation, observabilité',
+				'hero.highlight3': 'Incidents & automatisation pour la Protection Civile',
+				'hero.contactBtn': 'Contact',
+				'hero.portfolioBtn': 'Portfolio',
+				'sections.about.title': 'À propos',
+				'sections.about.subtitle': 'Qui je suis et ce que j’apporte.',
+				'about.story.title': 'Parcours',
+				'about.story.p1': 'J’ai découvert l’administration systèmes et le développement pendant mon BTS SIO (SISR). Stages puis alternance m’ont permis de créer des outils qui améliorent la logistique, la communication et le support IT.',
+				'about.story.p2': 'Au quotidien, je combine serveurs, réseaux et automatisation pour éviter les tâches répétitives et maintenir des services fiables pour les équipes terrain.',
+				'about.story.p3': 'Je souhaite maintenant aller plus loin sur l’infrastructure, le socle sécurité et l’outillage opérationnel, toujours au plus près des besoins concrets.',
+				'about.story.cta': 'Voir le CV numérique',
+				'about.profile.text': 'Étudiant IT français spécialisé en Systèmes & Réseaux (SISR). À l’aise avec les serveurs Linux/Windows, la virtualisation et le développement pour automatiser les tâches.',
+					'about.details.location': '<strong>Localisation :</strong> Côtes-d’Armor, France',
+					'about.details.license': '<strong>Permis :</strong> B (2023)',
+					'about.details.values': '<strong>Valeurs :</strong> attentif, curieux, organisé, dynamique',
+				'about.firstaid.title': 'Secourisme (PSE1 & PSE2)',
+				'about.firstaid.desc': 'Actif depuis 2023 — missions terrain avec la Protection Civile, dont l’appui aux opérations Paris 2024.',
+				'sections.portfolio.title': 'Portfolio',
+				'sections.portfolio.subtitle': 'Projets mêlant systèmes, réseaux et développement pragmatique.',
+				'portfolio.apc22.tagline': 'Application mobile · Flutter & Firebase',
+				'portfolio.apc22.highlight1': 'Journal d’incidents hors-ligne utilisé lors de grands événements publics.',
+				'portfolio.apc22.highlight2': 'Tableau de bord temps réel pour coordonner les équipes de secours.',
+				'portfolio.plugins.tagline': 'Modules open-source · Python & PHP',
+				'portfolio.plugins.highlight1': 'Tableaux de bord logistiques automatisés pour les entrepôts Odoo.',
+				'portfolio.plugins.highlight2': 'Routage intelligent des tickets dans GestSup avec suivi des SLA.',
+				'portfolio.jobboard.tagline': 'Full-stack · Next.js & Express',
+				'portfolio.jobboard.highlight1': 'Interface Next.js 14 + Tailwind/DaisyUI avec filtrage d’annonces.',
+				'portfolio.jobboard.highlight2': 'API Express/MySQL avec rôles candidat, entreprise et admin.',
+				'portfolio.ai.tagline': 'Lab d’automatisation · Python & APIs ML',
+				'portfolio.ai.highlight1': 'Assistants pour la documentation, le tri d’incidents et le reporting.',
+				'portfolio.ai.highlight2': 'Garde-fous pour protéger les bases de connaissances internes.',
+				'portfolio.print.tagline': 'Automatisation desktop · Python & CUPS',
+				'portfolio.print.highlight1': 'Files d’impression automatisées pour les maisons médicales de garde.',
+				'portfolio.print.highlight2': 'Supervision et alerting pour les documents critiques.',
+				'portfolio.signage.tagline': 'Intégration IoT · Raspberry Pi & capteurs',
+				'portfolio.signage.highlight1': 'Affichage de tableaux de bord sobre en énergie grâce aux détecteurs de présence.',
+				'portfolio.signage.highlight2': 'Rotation automatique des contenus et administration à distance.',
+				'portfolio.viewProject': 'Voir le projet',
+				'portfolio.common.objective': 'Objectif',
+				'portfolio.common.challenges': 'Défis clés',
+				'portfolio.common.contributions': 'Contributions',
+				'portfolio.common.stack': 'Stack & outils',
+				'portfolio.common.impact': 'Impact',
+				'portfolio.apc22.lead': 'Application compagnon pour la Protection Civile afin de saisir les interventions, partager les checklists et synchroniser avec le poste de commandement même en connectivité limitée.',
+				'portfolio.apc22.meta.years': '<strong>Années :</strong> 2023 — 2024',
+				'portfolio.apc22.meta.client': '<strong>Client :</strong> Protection Civile Côtes-d’Armor',
+				'portfolio.apc22.meta.role': '<strong>Rôle :</strong> Développeur principal & co-designer',
+				'portfolio.apc22.objective': 'Centraliser les fiches d’intervention et briefings terrain dans une application mobile utilisable hors ligne, avec synchronisation sécurisée dès le retour réseau.',
+				'portfolio.apc22.challenges': '<li>Garantir la capture de données en mode avion et gérer les conflits lors des synchronisations.</li><li>Proposer une interface intuitive pour des secouristes centrés sur l’intervention.</li><li>Assurer la conformité RGPD et les contrôles d’accès pour les exports sensibles.</li>',
+				'portfolio.apc22.contributions': '<li>Ateliers avec les équipes APC22 pour prioriser les parcours terrain.</li><li>Développement Flutter (états, formulaires dynamiques, mode offline) avec règles Firebase Auth/Firestore.</li><li>CI/CD GitHub Actions et distribution sécurisée via Firebase App Distribution.</li><li>Exports PDF automatiques et passerelle FastAPI pour le reporting coordinateurs.</li>',
+				'portfolio.apc22.stack': '<li>Flutter, Dart, Riverpod</li><li>Firebase Auth, Firestore, Cloud Functions</li><li>FastAPI, PostgreSQL pour les exports historiques</li><li>GitHub Actions, Firebase App Distribution</li>',
+				'portfolio.apc22.impact': 'Pilotée sur des exercices départementaux : réduction du papier, préparation accélérée des bilans post-intervention et traçabilité renforcée pour l’encadrement.',
+				'portfolio.plugins.lead': 'Extensions open-source qui fluidifient la logistique et le support IT en adaptant les outils existants aux contraintes terrain.',
+				'portfolio.plugins.meta.years': '<strong>Années :</strong> 2022 — 2024',
+				'portfolio.plugins.meta.context': '<strong>Contexte :</strong> Organisations associatives & PME',
+				'portfolio.plugins.meta.role': '<strong>Rôle :</strong> Développeur full-stack',
+				'portfolio.plugins.objective': 'Automatiser le suivi matériel (Odoo) et la priorisation des tickets (GestSup) tout en restant compatibles avec les mises à jour officielles.',
+				'portfolio.plugins.challenges': '<li>Étendre les modules en respectant les conventions Odoo/GestSup.</li><li>Sécuriser les échanges inter-systèmes (API, webhooks) et gérer les erreurs réseau.</li><li>Documenter pour des équipes mixtes techniques et métiers.</li>',
+				'portfolio.plugins.contributions': '<li>Modules Python Odoo pour tableaux logistiques, notifications et validations.</li><li>Plugins PHP GestSup pour le routage automatique et le calcul des SLA.</li><li>Tests automatisés (PyTest/PHPUnit) et pipelines Git pour les environnements de recette.</li><li>Guides utilisateurs et formations rapides pour l’adoption.</li>',
+				'portfolio.plugins.stack': '<li>Odoo ORM, Python 3, vues XML</li><li>GestSup, PHP 8, MySQL</li><li>REST/JSON, webhooks, Postman</li><li>GitLab CI, Docker Compose pour la recette</li>',
+				'portfolio.plugins.impact': 'Moins de ressaisies manuelles, visibilité temps réel des stocks critiques et tickets orientés vers les bons techniciens.',
+				'portfolio.jobboard.lead': 'Job board Next.js + Express réalisé durant le pré-MSc Epitech pour connecter étudiants et entreprises avec workflows complets.',
+				'portfolio.jobboard.meta.year': '<strong>Année :</strong> 2024',
+				'portfolio.jobboard.meta.project': '<strong>Projet :</strong> Projet pré-MSc Epitech',
+				'portfolio.jobboard.meta.role': '<strong>Rôle :</strong> Développeur full-stack',
+				'portfolio.jobboard.objective': 'Construire un job board complet (annonces, candidatures, messagerie) reproductible par les étudiants.',
+				'portfolio.jobboard.challenges': '<li>Aligner Next.js (App Router) et Express via sessions cookies sécurisées.</li><li>Modéliser MySQL pour annonces, profils, candidatures et messages avec scripts d’init.</li><li>Documenter l’installation multi-OS et orchestrer front/back pour la promo.</li>',
+				'portfolio.jobboard.contributions': '<li>Conception de l’API Express (annonces, candidatures, messagerie) et middleware de rôles.</li><li>Implémentation du front Next.js 14 (App Router) : pages compte, admin, annonces, messages.</li><li>Auth par session cookie avec protections CSRF et garde côté front.</li><li>Rédaction du README, scripts npm et procédures SQL pour MySQL local.</li>',
+				'portfolio.jobboard.stack': '<li>Next.js 14, React, TailwindCSS + DaisyUI</li><li>Express.js, Node.js</li><li>MySQL 8, scripts SQL</li><li>Sessions cookie, REST API</li>',
+				'portfolio.jobboard.impact': 'Support de démonstration pour la promo : installation guidée, jeux de données et workflows complets.',
+				'portfolio.ai.lead': 'Laboratoire personnel pour accélérer les tâches opérationnelles répétitives avec des assistants IA, sans sacrifier la confidentialité.',
+				'portfolio.ai.meta.period': '<strong>Période :</strong> 2023 — En cours',
+				'portfolio.ai.meta.type': '<strong>Type :</strong> R&D personnelle',
+				'portfolio.ai.meta.role': '<strong>Rôle :</strong> Conception & développement',
+				'portfolio.ai.objective': 'Construire des assistants d’aide à la décision (tri d’incidents, rédaction, veille) réutilisables dans des environnements hybrides.',
+				'portfolio.ai.challenges': '<li>Isoler les données sensibles tout en exploitant les modèles disponibles.</li><li>Garantir la traçabilité des réponses (sources citées, logs d’audit).</li><li>Limiter le coût d’inférence grâce au batching et au cache.</li>',
+				'portfolio.ai.contributions': '<li>Microservices FastAPI + LangChain pour l’orchestration de prompts et l’accès vectoriel.</li><li>Connecteurs vers des modèles open-source (OLLAMA, Hugging Face) et APIs externes.</li><li>Interface CLI et dashboard Streamlit pour tester/itérer sur les workflows.</li><li>Scripts d’évaluation (toxicity, hallucination) intégrés en CI.</li>',
+				'portfolio.ai.stack': '<li>Python, FastAPI, LangChain</li><li>PostgreSQL + pgvector, Redis</li><li>Docker, Docker Compose, Make</li><li>OpenAI, Hugging Face, OLLAMA</li>',
+				'portfolio.ai.impact': 'Réduction du temps de documentation et base solide pour proposer des assistants sécurisés aux équipes internes.',
+				'portfolio.print.lead': 'Chaîne d’impression automatique inspirée du SAMU pour diffuser fiches patients et prescriptions aux maisons médicales de garde sans action manuelle.',
+				'portfolio.print.meta.year': '<strong>Année :</strong> 2023',
+				'portfolio.print.meta.context': '<strong>Contexte :</strong> Maisons médicales de garde',
+				'portfolio.print.meta.role': '<strong>Rôle :</strong> Développeur & intégrateur systèmes',
+				'portfolio.print.objective': 'Garantir la diffusion fiable de documents critiques (fiches patients, prescriptions) depuis e-mails et API vers plusieurs imprimantes.',
+				'portfolio.print.challenges': '<li>Gérer les files d’attente et prioriser selon l’urgence.</li><li>Surveiller les périphériques et relancer automatiquement.</li><li>Sécuriser les documents (chiffrement, purge post-impression).</li>',
+				'portfolio.print.contributions': '<li>Service Python avec watchdog filesystem et API IMAP pour collecter les ordres.</li><li>Pipeline CUPS, règles d’impression et scripts Bash pour les scénarios de secours.</li><li>Dashboard Grafana + alertes Telegram pour surveiller les blocages.</li><li>Documentation d’exploitation et procédures de reprise.</li>',
+				'portfolio.print.stack': '<li>Python, CUPS, systemd</li><li>Grafana, Prometheus, Alertmanager</li><li>IMAP, PDFtk, Bash</li>',
+				'portfolio.print.impact': 'Impressions toujours dans les temps, même hors horaires de bureau, et alertes proactives limitant les interventions sur site.',
+				'portfolio.signage.lead': 'Réseau d’écrans pilotés par Raspberry Pi qui s’activent à l’arrivée du personnel et diffusent automatiquement les tableaux de bord opérationnels.',
+				'portfolio.signage.meta.year': '<strong>Année :</strong> 2022',
+				'portfolio.signage.meta.context': '<strong>Contexte :</strong> Protection Civile & locaux associatifs',
+				'portfolio.signage.meta.role': '<strong>Rôle :</strong> Intégrateur IoT',
+				'portfolio.signage.objective': 'Optimiser l’affichage des informations critiques (planning, météo, consignes) en réduisant la consommation électrique des écrans.',
+				'portfolio.signage.challenges': '<li>Détecter la présence avec capteurs PIR calibrés par salle.</li><li>Synchroniser dashboards, flux vidéo et alertes sans intervention.</li><li>Durcir le réseau et sécuriser physiquement les boîtiers.</li>',
+				'portfolio.signage.contributions': '<li>Scripts Bash/Python pour HDMI-CEC, rotation des sources et redémarrages planifiés.</li><li>Serveur MQTT + Node-RED pour la gestion du parc et les alertes.</li><li>VLAN dédié, VPN WireGuard, durcissement (fail2ban, audits Lynis).</li><li>Documentation de déploiement pour installation par bénévoles.</li>',
+				'portfolio.signage.stack': '<li>Raspberry Pi OS, Python, Bash</li><li>MQTT, Node-RED, Grafana</li><li>VLAN, VPN WireGuard</li><li>HDMI-CEC, capteurs PIR</li>',
+				'portfolio.signage.impact': 'Affichage activé uniquement lorsque nécessaire, réduction de la consommation et mise à jour centralisée des informations critiques.',
+				'sections.contact.title': 'Contact',
+				'sections.contact.subtitle': 'Construisons quelque chose ensemble.',
+				'contact.form.lastname.label': 'Nom',
+				'contact.form.lastname.placeholder': 'Votre nom',
+				'contact.form.firstname.label': 'Prénom',
+				'contact.form.firstname.placeholder': 'Votre prénom',
+				'contact.form.email.label': 'Email',
+				'contact.form.email.placeholder': 'votre@email.com',
+				'contact.form.message.label': 'Message',
+				'contact.form.message.placeholder': 'Votre message',
+				'contact.form.submit': 'Envoyer'
+			},
+			en: {
+				'page.title': 'Mattéo Binet — Portfolio',
+				'nav.home': 'Home',
+				'nav.about': 'About',
+				'nav.portfolio': 'Portfolio',
+				'nav.contact': 'Contact',
+				'hero.subtitle': 'Pre-MSc at Epitech. I design full-stack tools and run infrastructure: code, automation, and dependable services in the field.',
+				'hero.highlight1': 'Pre-MSc at Epitech after two years as a systems/network apprentice.',
+				'hero.highlight2': 'Projects: Next.js + Express builds, automation scripts, observability.',
+				'hero.highlight3': 'Incident response & automation for the Protection Civile.',
+				'hero.contactBtn': 'Contact',
+				'hero.portfolioBtn': 'Portfolio',
+				'sections.about.title': 'About',
+				'sections.about.subtitle': 'Who I am and how I help.',
+				'about.story.title': 'Story',
+				'about.story.p1': 'I discovered system administration and development during my BTS SIO (SISR). Internships and a work-study let me build tools that improved logistics, communication, and IT support.',
+				'about.story.p2': 'Day to day, I blend servers, networks, and automation to eliminate repetitive tasks and keep services reliable for field teams.',
+				'about.story.p3': 'Next step: go deeper on infrastructure, security fundamentals, and operational tooling while staying close to real-life needs.',
+				'about.story.cta': 'View digital résumé',
+				'about.profile.text': 'French IT student specialised in Systems & Networks (SISR). Comfortable with Linux/Windows servers, virtualization, and development to automate tasks.',
+					'about.details.location': '<strong>Location:</strong> Côtes-d’Armor, France',
+					'about.details.license': '<strong>Driving licence:</strong> B (2023)',
+					'about.details.values': '<strong>Values:</strong> attentive, curious, organized, dynamic',
+				'about.firstaid.title': 'First Aid (PSE1 & PSE2)',
+				'about.firstaid.desc': 'Active since 2023 — field support with Protection Civile, including Paris 2024 operations.',
+				'sections.portfolio.title': 'Portfolio',
+				'sections.portfolio.subtitle': 'Projects combining systems, networks, and pragmatic development.',
+				'portfolio.apc22.tagline': 'Mobile app · Flutter & Firebase',
+				'portfolio.apc22.highlight1': 'Offline-first incident logging used during large public events.',
+				'portfolio.apc22.highlight2': 'Live command dashboard to coordinate rescue teams.',
+				'portfolio.plugins.tagline': 'Open-source add-ons · Python & PHP',
+				'portfolio.plugins.highlight1': 'Automated logistics dashboards for Odoo warehouses.',
+				'portfolio.plugins.highlight2': 'Smart ticket routing inside GestSup with SLA tracking.',
+				'portfolio.jobboard.tagline': 'Full-stack · Next.js & Express',
+				'portfolio.jobboard.highlight1': 'Next.js 14 + Tailwind/DaisyUI interface with job filtering.',
+				'portfolio.jobboard.highlight2': 'Express/MySQL API with candidate, company, and admin roles.',
+				'portfolio.ai.tagline': 'Automation lab · Python & ML APIs',
+				'portfolio.ai.highlight1': 'Assistants for documentation, triage, and reporting.',
+				'portfolio.ai.highlight2': 'Guardrails to protect internal knowledge bases.',
+				'portfolio.print.tagline': 'Desktop automation · Python & CUPS',
+				'portfolio.print.highlight1': 'Automated print queues for urgent-care medical houses.',
+				'portfolio.print.highlight2': 'Monitoring and alerting for critical documents.',
+				'portfolio.signage.tagline': 'IoT integration · Raspberry Pi & sensors',
+				'portfolio.signage.highlight1': 'Energy-aware dashboard signage using motion sensors.',
+				'portfolio.signage.highlight2': 'Automatic content rotation and remote management.',
+				'portfolio.viewProject': 'View project',
+				'portfolio.common.objective': 'Objective',
+				'portfolio.common.challenges': 'Key challenges',
+				'portfolio.common.contributions': 'Contributions',
+				'portfolio.common.stack': 'Stack & tools',
+				'portfolio.common.impact': 'Impact',
+				'portfolio.apc22.lead': 'Companion app for Protection Civile teams to capture interventions, share checklists, and sync with the command post even with poor connectivity.',
+				'portfolio.apc22.meta.years': '<strong>Years:</strong> 2023 — 2024',
+				'portfolio.apc22.meta.client': '<strong>Client:</strong> Protection Civile Côtes-d’Armor',
+				'portfolio.apc22.meta.role': '<strong>Role:</strong> Lead developer & co-designer',
+				'portfolio.apc22.objective': 'Centralise intervention reports and briefings in an offline-capable mobile app with secure sync once the network returns.',
+				'portfolio.apc22.challenges': '<li>Guarantee offline data capture and handle sync conflicts.</li><li>Offer a simple interface for responders focused on the field.</li><li>Ensure GDPR compliance and secure export controls.</li>',
+				'portfolio.apc22.contributions': '<li>Workshops with APC22 teams to prioritise field workflows.</li><li>Flutter development (state, dynamic forms, offline mode) with Firebase Auth/Firestore rules.</li><li>GitHub Actions CI/CD and secure delivery via Firebase App Distribution.</li><li>Automated PDF exports plus a FastAPI bridge for coordinators’ reporting.</li>',
+				'portfolio.apc22.stack': '<li>Flutter, Dart, Riverpod</li><li>Firebase Auth, Firestore, Cloud Functions</li><li>FastAPI, PostgreSQL for historical exports</li><li>GitHub Actions, Firebase App Distribution</li>',
+				'portfolio.apc22.impact': 'Piloted during departmental drills: less paper, faster post-incident debriefs, and better traceability for leadership.',
+				'portfolio.plugins.lead': 'Set of open-source extensions that streamline logistics and IT support by adapting existing tools to field constraints.',
+				'portfolio.plugins.meta.years': '<strong>Years:</strong> 2022 — 2024',
+				'portfolio.plugins.meta.context': '<strong>Context:</strong> Nonprofits & SMEs',
+				'portfolio.plugins.meta.role': '<strong>Role:</strong> Full-stack developer',
+				'portfolio.plugins.objective': 'Automate asset tracking (Odoo) and ticket prioritisation (GestSup) without breaking compatibility with upstream releases.',
+				'portfolio.plugins.challenges': '<li>Extend modules while respecting Odoo/GestSup conventions.</li><li>Secure cross-system exchanges (APIs, webhooks) and handle network failures.</li><li>Document enough for mixed technical/functional teams.</li>',
+				'portfolio.plugins.contributions': '<li>Python Odoo modules for logistics dashboards, notifications, and validations.</li><li>PHP GestSup plugins for automatic routing and SLA computation.</li><li>Automated testing (PyTest/PHPUnit) and Git pipelines for staging.</li><li>User guides and micro-trainings to ease adoption.</li>',
+				'portfolio.plugins.stack': '<li>Odoo ORM, Python 3, XML views</li><li>GestSup, PHP 8, MySQL</li><li>REST/JSON, webhooks, Postman</li><li>GitLab CI, Docker Compose for staging</li>',
+				'portfolio.plugins.impact': 'Reduced re-entry, real-time view of critical stock, and tickets routed to the right technicians.',
+				'portfolio.jobboard.lead': 'Next.js + Express job board built during the Epitech pre-MSc to connect students and companies with end-to-end workflows.',
+				'portfolio.jobboard.meta.year': '<strong>Year:</strong> 2024',
+				'portfolio.jobboard.meta.project': '<strong>Project:</strong> Epitech pre-MSc project',
+				'portfolio.jobboard.meta.role': '<strong>Role:</strong> Full-stack developer',
+				'portfolio.jobboard.objective': 'Build a complete job board (listings, applications, messaging) that classmates can reproduce.',
+				'portfolio.jobboard.challenges': '<li>Bridge Next.js (App Router) and Express using secure cookie sessions.</li><li>Design MySQL schemas for jobs, profiles, applications, and messages with init scripts.</li><li>Document multi-OS setup and coordinate front/back tooling for the cohort.</li>',
+				'portfolio.jobboard.contributions': '<li>Designed the Express API (listings, applications, messaging) plus role-based middleware.</li><li>Implemented the Next.js 14 front end (App Router) for account, admin, ads, and messaging pages.</li><li>Set up session-based auth with CSRF protections and client-side guards.</li><li>Authored README, npm scripts, and SQL procedures for local MySQL.</li>',
+				'portfolio.jobboard.stack': '<li>Next.js 14, React, TailwindCSS + DaisyUI</li><li>Express.js, Node.js</li><li>MySQL 8, SQL scripts</li><li>Cookie sessions, REST API</li>',
+				'portfolio.jobboard.impact': 'Delivered a demo package for the class: guided setup, seed data, and complete workflows.',
+				'portfolio.ai.lead': 'Personal lab exploring how AI assistants can speed up recurrent operations tasks without compromising confidentiality.',
+				'portfolio.ai.meta.period': '<strong>Period:</strong> 2023 — Ongoing',
+				'portfolio.ai.meta.type': '<strong>Type:</strong> Personal R&D',
+				'portfolio.ai.meta.role': '<strong>Role:</strong> Design & development',
+				'portfolio.ai.objective': 'Build decision-support assistants (incident triage, reporting, knowledge) reusable across hybrid environments.',
+				'portfolio.ai.challenges': '<li>Isolate sensitive data while leveraging available models.</li><li>Guarantee answer traceability (cited sources, audit logs).</li><li>Keep inference costs under control via batching and caching.</li>',
+				'portfolio.ai.contributions': '<li>FastAPI microservices with LangChain for prompt orchestration and vector access.</li><li>Connectors to self-hosted models (OLLAMA, Hugging Face) and external APIs.</li><li>CLI + Streamlit dashboard to experiment and benchmark workflows.</li><li>Evaluation scripts (toxicity, hallucination) wired into CI.</li>',
+				'portfolio.ai.stack': '<li>Python, FastAPI, LangChain</li><li>PostgreSQL + pgvector, Redis</li><li>Docker, Docker Compose, Make</li><li>OpenAI, Hugging Face, OLLAMA</li>',
+				'portfolio.ai.impact': 'Cut documentation time and built a solid foundation to offer secure assistants internally.',
+				'portfolio.print.lead': 'Automatic printing pipeline inspired by SAMU, delivering medical sheets and prescriptions to on-call houses without manual actions.',
+				'portfolio.print.meta.year': '<strong>Year:</strong> 2023',
+				'portfolio.print.meta.context': '<strong>Context:</strong> Urgent-care medical houses',
+				'portfolio.print.meta.role': '<strong>Role:</strong> Systems developer & integrator',
+				'portfolio.print.objective': 'Ensure reliable delivery of critical documents (patient sheets, prescriptions) from emails and APIs to multiple printers.',
+				'portfolio.print.challenges': '<li>Manage queues and prioritise based on urgency.</li><li>Monitor devices and restart automatically.</li><li>Secure documents (encryption, post-print purge).</li>',
+				'portfolio.print.contributions': '<li>Python service using filesystem watchdog and IMAP API to collect orders.</li><li>CUPS pipeline, print rules, and Bash scripts for fallbacks.</li><li>Grafana dashboard + Telegram alerts when queues block.</li><li>Runbook and recovery procedure for operators.</li>',
+				'portfolio.print.stack': '<li>Python, CUPS, systemd</li><li>Grafana, Prometheus, Alertmanager</li><li>IMAP, PDFtk, Bash</li>',
+				'portfolio.print.impact': 'Documents printed on time even off-hours, with proactive alerts reducing on-site interventions.',
+				'portfolio.signage.lead': 'Network of Raspberry Pi-powered displays that wake up when staff is nearby and rotate operational dashboards automatically.',
+				'portfolio.signage.meta.year': '<strong>Year:</strong> 2022',
+				'portfolio.signage.meta.context': '<strong>Context:</strong> Protection Civile & associative offices',
+				'portfolio.signage.meta.role': '<strong>Role:</strong> IoT integrator',
+				'portfolio.signage.objective': 'Optimise display of critical information (schedule, weather, instructions) while reducing power consumption.',
+				'portfolio.signage.challenges': '<li>Reliable presence detection with PIR sensors calibrated per room.</li><li>Sync dashboards, video feeds, and alerts with zero manual work.</li><li>Harden the network and secure the devices physically.</li>',
+				'portfolio.signage.contributions': '<li>Bash/Python scripts for HDMI-CEC control, source rotation, and scheduled reboots.</li><li>MQTT + Node-RED server for fleet management and alerts.</li><li>Dedicated VLAN, WireGuard VPN, hardening (fail2ban, Lynis audits).</li><li>Deployment playbook so volunteers can install nodes.</li>',
+				'portfolio.signage.stack': '<li>Raspberry Pi OS, Python, Bash</li><li>MQTT, Node-RED, Grafana</li><li>VLAN, WireGuard VPN</li><li>HDMI-CEC, PIR sensors</li>',
+				'portfolio.signage.impact': 'Displays only power up when needed, lowering energy use and keeping information updated centrally.',
+				'sections.contact.title': 'Contact',
+				'sections.contact.subtitle': 'Let’s build something together.',
+				'contact.form.lastname.label': 'Last name',
+				'contact.form.lastname.placeholder': 'Your last name',
+				'contact.form.firstname.label': 'First name',
+				'contact.form.firstname.placeholder': 'Your first name',
+				'contact.form.email.label': 'Email',
+				'contact.form.email.placeholder': 'your@email.com',
+				'contact.form.message.label': 'Message',
+				'contact.form.message.placeholder': 'Your message',
+				'contact.form.submit': 'Send'
+			}
+		};
+
+		let currentLang = 'fr';
+
+		function updateLangButtons(lang) {
+			document.querySelectorAll('.lang-btn').forEach(btn => {
+				const isActive = btn.dataset.lang === lang;
+				btn.classList.toggle('active', isActive);
+				btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+			});
+		}
+
+		function applyTranslations(lang) {
+			const dict = translations[lang];
+			if (!dict) return;
+			currentLang = lang;
+			document.documentElement.setAttribute('lang', lang === 'fr' ? 'fr' : 'en');
+			Object.keys(dict).forEach(key => {
+				if (key === 'page.title') {
+					document.title = dict[key];
+				}
+			});
+			document.querySelectorAll('[data-i18n]').forEach(el => {
+				const key = el.dataset.i18n;
+				if (dict[key] !== undefined) {
+					el.innerHTML = dict[key];
+				}
+			});
+			document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+				const key = el.dataset.i18nPlaceholder;
+				if (dict[key] !== undefined) {
+					el.setAttribute('placeholder', dict[key]);
+				}
+			});
+			updateLangButtons(lang);
+			if (window.M && M.updateTextFields) {
+				M.updateTextFields();
+			}
+		}
+
+		document.addEventListener('DOMContentLoaded', function() {
+			const sidenavs = document.querySelectorAll('.sidenav');
+			M.Sidenav.init(sidenavs);
+			M.Modal.init(document.querySelectorAll('.modal'), { endingTop: '6%' });
+
+			const storedLang = localStorage.getItem('preferredLang') || 'fr';
+			applyTranslations(storedLang);
+
+			document.getElementById('year').textContent = new Date().getFullYear();
+
+			document.querySelectorAll('.lang-btn').forEach(btn => {
+				btn.addEventListener('click', () => {
+					const lang = btn.dataset.lang || 'fr';
+					if (lang !== currentLang) {
+						applyTranslations(lang);
+						localStorage.setItem('preferredLang', lang);
+					}
+					const sidenav = btn.closest('.sidenav');
+					if (sidenav) {
+						const instance = M.Sidenav.getInstance(sidenav);
+						if (instance) {
+							instance.close();
+						}
+					}
+				});
+			});
+
+			const io = new IntersectionObserver((entries) => {
+				entries.forEach(e => {
+					if (e.isIntersecting) {
+						e.target.classList.add('reveal-in');
+						io.unobserve(e.target);
+					}
+				});
+			}, { threshold: 0.12 });
+
+			document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+		});
+	</script>
+</body>
+</html>
